@@ -1,0 +1,70 @@
+@media (min-width: 1201px) {
+  .mobile-header {
+    display: none;
+  }
+}
+
+@media (max-width: 1200px) {
+
+
+    .disegn-pic-main {
+        width: 100%;
+    }
+  .list-menu-header ul li svg {
+    width: 20px;
+    height: 20px;
+  }
+  .list-menu-header nav ul {
+    gap: 0;
+  }
+  .desktop-header,
+  .list-menu-header , .wave-img img {
+    display: none;
+  }
+
+  .offcanvas-body ul {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .offcanvas-body ul li a {
+    color: #1b0d1c;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+}
+@media (max-width: 992px) {
+  .info-website h1 {
+    text-align: center;
+    font-size: 45px;
+  }
+  .intro-title p {
+    font-size: 14px;
+  }
+  .intro-img-main {
+    width: 100%;
+    height: 100%;
+  }
+  .parent {
+    grid-template-columns: repeat(2, 1fr); /* نمایش ۳ ستون در اندازه موبایل */
+  }
+
+  /* حذف تنظیمات موقعیت برای ساختار طبیعی‌تر */
+  .parent > div {
+    grid-column: auto;
+    grid-row: auto;
+  }
+}
+@media (max-width: 767px) {
+  .tabs {
+    width: unset;
+  }
+}
+@media (max-width: 500px) {
+  .list-category img {
+    width: 100%;
+  }
+}

@@ -1,0 +1,2731 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="container-fluid px-lg-5">
+      <div class="desktop-header">
+        <div
+          class="d-flex justify-content-between align-items-center top-header"
+        >
+          <div class="col-lg-3">
+            <img src="assets/img/profile.svg" alt="profile" />
+            <a href="./index.html" class="login">ورود / ثبت‌نام</a>
+          </div>
+          <div class="logo col-lg-3">
+            <img src="assets/img/Logo.png" alt="logo" />
+          </div>
+          <div class="d-flex gap-3">
+            <div class="basket-shopping">
+              <a href="#"><img src="assets/img/shopping-cart.svg" alt="" /></a>
+            </div>
+            <div class="search">
+              <form action="#">
+                <img src="assets/img/search-normal.png" alt="" />
+                <input type="text" placeholder="جستجو" />
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="list-menu-header">
+          <nav>
+            <ul>
+              <li>
+                <a href="/index.html">
+                  <svg
+                    width="25"
+                    height="25"
+                    viewBox="0 0 25 25"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12.5 18.5V15.5"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M10.57 3.32L3.64002 8.87C2.86002 9.49 2.36002 10.8 2.53002 11.78L3.86002 19.74C4.10002 21.16 5.46002 22.31 6.90002 22.31H18.1C19.53 22.31 20.9 21.15 21.14 19.74L22.47 11.78C22.63 10.8 22.13 9.49 21.36 8.87L14.43 3.33C13.36 2.47 11.63 2.47 10.57 3.32Z"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                  خانه
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg
+                    width="24"
+                    height="25"
+                    viewBox="0 0 24 25"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g clip-path="url(#clip0_11_20160)">
+                      <path
+                        d="M19.79 7.77L16.76 4.74C15.61 3.59 14.04 3.65 13.27 4.88L11.58 7.55L16.98 12.95L19.65 11.26C20.8 10.53 20.87 8.85 19.79 7.77Z"
+                        stroke="currentColor"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M11.58 7.54999L7.64999 7.30999C5.45999 7.17999 4.68999 7.84999 4.44999 9.93999L3.46999 18.26C3.25999 20.01 4.52999 21.27 6.26999 21.06L14.59 20.08C16.68 19.83 17.44 19.07 17.22 16.88L16.99 12.95"
+                        stroke="currentColor"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M4.60999 19.92L7.63999 16.88"
+                        stroke="currentColor"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_11_20160">
+                        <rect
+                          width="24"
+                          height="24"
+                          fill="white"
+                          transform="translate(0 0.5)"
+                        />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  طراحان
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg
+                    width="25"
+                    height="25"
+                    viewBox="0 0 25 25"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M9.5 17.5V11.5L7.5 13.5"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M9.5 11.5L11.5 13.5"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M22.5 10.5V15.5C22.5 20.5 20.5 22.5 15.5 22.5H9.5C4.5 22.5 2.5 20.5 2.5 15.5V9.5C2.5 4.5 4.5 2.5 9.5 2.5H14.5"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M22.5 10.5H18.5C15.5 10.5 14.5 9.5 14.5 6.5V2.5L22.5 10.5Z"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                  آپلود فایل
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg
+                    width="25"
+                    height="25"
+                    viewBox="0 0 25 25"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M17.5 18.9301H13.5L9.04999 21.89C8.38999 22.33 7.5 21.8601 7.5 21.0601V18.9301C4.5 18.9301 2.5 16.9301 2.5 13.9301V7.92999C2.5 4.92999 4.5 2.92999 7.5 2.92999H17.5C20.5 2.92999 22.5 4.92999 22.5 7.92999V13.9301C22.5 16.9301 20.5 18.9301 17.5 18.9301Z"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      stroke-miterlimit="10"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M12.5001 11.86V11.65C12.5001 10.97 12.9201 10.61 13.3401 10.32C13.7501 10.04 14.16 9.68002 14.16 9.02002C14.16 8.10002 13.4201 7.35999 12.5001 7.35999C11.5801 7.35999 10.8401 8.10002 10.8401 9.02002"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M12.4955 14.25H12.5045"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                  سوالات متداول
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg
+                    width="25"
+                    height="25"
+                    viewBox="0 0 25 25"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M21.51 11.72V16.21C21.51 20.7 19.72 22.5 15.22 22.5H9.83002C9.25002 22.5 8.71998 22.47 8.22998 22.4"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M3.54004 16.02V11.72"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M12.5299 12.5C14.3599 12.5 15.7099 11.0101 15.5299 9.18005L14.8599 2.5H10.1899L9.51991 9.18005C9.33991 11.0101 10.6999 12.5 12.5299 12.5Z"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M18.8301 12.5C20.8501 12.5 22.3301 10.86 22.1301 8.84998L21.85 6.09998C21.49 3.49998 20.4901 2.5 17.8701 2.5H14.8201L15.5201 9.51001C15.7001 11.16 17.1801 12.5 18.8301 12.5Z"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M6.17004 12.5C7.82004 12.5 9.31003 11.16 9.47003 9.51001L9.69006 7.30005L10.17 2.5H7.12005C4.50005 2.5 3.50007 3.49998 3.14007 6.09998L2.86004 8.84998C2.66004 10.86 4.15004 12.5 6.17004 12.5Z"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M9.5 19.5C9.5 20.25 9.28998 20.9601 8.91998 21.5601C8.72998 21.8801 8.49998 22.17 8.22998 22.4C8.19998 22.44 8.17 22.47 8.13 22.5C7.43 23.13 6.51 23.5 5.5 23.5C4.28 23.5 3.18997 22.95 2.46997 22.09C2.44997 22.06 2.42002 22.04 2.40002 22.01C2.28002 21.87 2.17002 21.7201 2.08002 21.5601C1.71002 20.9601 1.5 20.25 1.5 19.5C1.5 18.24 2.08 17.11 3 16.38C3.17 16.24 3.34998 16.12 3.53998 16.02C4.11998 15.69 4.79 15.5 5.5 15.5C6.5 15.5 7.39998 15.86 8.09998 16.47C8.21998 16.56 8.32999 16.67 8.42999 16.78C9.08999 17.5 9.5 18.45 9.5 19.5Z"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      stroke-miterlimit="10"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M6.98999 19.48H4.01001"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      stroke-miterlimit="10"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M5.5 18.02V21.01"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      stroke-miterlimit="10"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                  ثبت سفارش
+                </a>
+              </li>
+              <li>
+                <a class="active" href="./shop.html">
+                  <svg
+                    width="25"
+                    height="25"
+                    viewBox="0 0 25 25"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M3.51001 11.72V16.21C3.51001 20.7 5.31001 22.5 9.80001 22.5H15.19C19.68 22.5 21.48 20.7 21.48 16.21V11.72"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M12.5 12.5C14.33 12.5 15.68 11.01 15.5 9.18L14.84 2.5H10.17L9.49999 9.18C9.31999 11.01 10.67 12.5 12.5 12.5Z"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M18.81 12.5C20.83 12.5 22.31 10.86 22.11 8.85L21.83 6.1C21.47 3.5 20.47 2.5 17.85 2.5H14.8L15.5 9.51C15.67 11.16 17.16 12.5 18.81 12.5Z"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M6.13988 12.5C7.78988 12.5 9.27988 11.16 9.43988 9.51L9.65988 7.3L10.1399 2.5H7.08988C4.46988 2.5 3.46988 3.5 3.10988 6.1L2.83988 8.85C2.63988 10.86 4.11988 12.5 6.13988 12.5Z"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M12.5 17.5C10.83 17.5 10 18.33 10 20V22.5H15V20C15 18.33 14.17 17.5 12.5 17.5Z"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                  فروشگاه
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg
+                    width="25"
+                    height="25"
+                    viewBox="0 0 25 25"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M11.2499 2.95001C11.9499 2.36001 13.0799 2.36001 13.7599 2.95001L15.3399 4.30001C15.6399 4.55001 16.2099 4.76001 16.6099 4.76001H18.3099C19.3699 4.76001 20.2399 5.63001 20.2399 6.69001V8.39001C20.2399 8.79001 20.4499 9.35001 20.6999 9.65001L22.0499 11.23C22.6399 11.93 22.6399 13.06 22.0499 13.74L20.6999 15.32C20.4499 15.62 20.2399 16.18 20.2399 16.58V18.28C20.2399 19.34 19.3699 20.21 18.3099 20.21H16.6099C16.2099 20.21 15.6499 20.42 15.3499 20.67L13.7699 22.02C13.0699 22.61 11.9399 22.61 11.2599 22.02L9.67988 20.67C9.37988 20.42 8.80988 20.21 8.41988 20.21H6.66988C5.60988 20.21 4.73988 19.34 4.73988 18.28V16.57C4.73988 16.18 4.53988 15.61 4.28988 15.32L2.93988 13.73C2.35988 13.04 2.35988 11.92 2.93988 11.23L4.28988 9.64001C4.53988 9.34001 4.73988 8.78001 4.73988 8.39001V6.70001C4.73988 5.64001 5.60988 4.77001 6.66988 4.77001H8.39988C8.79988 4.77001 9.35988 4.56001 9.65988 4.31001L11.2499 2.95001Z"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M12.5 8.63V13.46"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M12.4946 16.5H12.5036"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                  درباره ما
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg
+                    width="24"
+                    height="25"
+                    viewBox="0 0 24 25"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M21.97 18.83C21.97 19.19 21.89 19.56 21.72 19.92C21.55 20.28 21.33 20.62 21.04 20.94C20.55 21.48 20.01 21.87 19.4 22.12C18.8 22.37 18.15 22.5 17.45 22.5C16.43 22.5 15.34 22.26 14.19 21.77C13.04 21.28 11.89 20.62 10.75 19.79C9.6 18.95 8.51 18.02 7.47 16.99C6.44 15.95 5.51 14.86 4.68 13.72C3.86 12.58 3.2 11.44 2.72 10.31C2.24 9.17 2 8.08 2 7.04C2 6.36 2.12 5.71 2.36 5.11C2.6 4.5 2.98 3.94 3.51 3.44C4.15 2.81 4.85 2.5 5.59 2.5C5.87 2.5 6.15 2.56 6.4 2.68C6.66 2.8 6.89 2.98 7.07 3.24L9.39 6.51C9.57 6.76 9.7 6.99 9.79 7.21C9.88 7.42 9.93 7.63 9.93 7.82C9.93 8.06 9.86 8.3 9.72 8.53C9.59 8.76 9.4 9 9.16 9.24L8.4 10.03C8.29 10.14 8.24 10.27 8.24 10.43C8.24 10.51 8.25 10.58 8.27 10.66C8.3 10.74 8.33 10.8 8.35 10.86C8.53 11.19 8.84 11.62 9.28 12.14C9.73 12.66 10.21 13.19 10.73 13.72C11.27 14.25 11.79 14.74 12.32 15.19C12.84 15.63 13.27 15.93 13.61 16.11C13.66 16.13 13.72 16.16 13.79 16.19C13.87 16.22 13.95 16.23 14.04 16.23C14.21 16.23 14.34 16.17 14.45 16.06L15.21 15.31C15.46 15.06 15.7 14.87 15.93 14.75C16.16 14.61 16.39 14.54 16.64 14.54C16.83 14.54 17.03 14.58 17.25 14.67C17.47 14.76 17.7 14.89 17.95 15.06L21.26 17.41C21.52 17.59 21.7 17.8 21.81 18.05C21.91 18.3 21.97 18.55 21.97 18.83Z"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      stroke-miterlimit="10"
+                    />
+                  </svg>
+                  تماس با ما
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="mobile-header">
+        <div
+          class="d-flex justify-content-between align-items-center top-header"
+        >
+          <button
+            class="btn"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasRight"
+            aria-controls="offcanvasRight"
+          >
+            <img
+              src="https://img.icons8.com/ios/50/menu--v1.png"
+              width="30px"
+              alt=""
+            />
+          </button>
+          <div class="logo col-lg-3">
+            <img src="assets/img/Logo.png" width="150px" alt="logo" />
+          </div>
+        </div>
+
+        <div
+          class="offcanvas offcanvas-start"
+          tabindex="-1"
+          id="offcanvasRight"
+          aria-labelledby="offcanvasRightLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 id="offcanvasRightLabel">
+              <img src="assets/img/Logo.png" width="190px" alt="" />
+            </h5>
+            <button
+              type="button"
+              class="btn-close text-reset"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav>
+              <ul>
+                <li>
+                  <div class="d-flex gap-3">
+                    <div class="basket-shopping">
+                      <a href="#"
+                        ><img src="assets/img/shopping-cart.svg" alt=""
+                      /></a>
+                    </div>
+                    <div class="search">
+                      <form action="#">
+                        <img src="assets/img/search-normal.png" alt="" />
+                        <input type="text" placeholder="جستجو" />
+                      </form>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <img src="assets/img/profile.svg" alt="profile" />
+                  <a href="#" class="login">ورود / ثبت‌نام</a>
+                </li>
+                <li>
+                  <a href="#" class="active">
+                    <svg
+                      width="25"
+                      height="25"
+                      viewBox="0 0 25 25"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M12.5 18.5V15.5"
+                        stroke="#fff"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M10.57 3.32L3.64002 8.87C2.86002 9.49 2.36002 10.8 2.53002 11.78L3.86002 19.74C4.10002 21.16 5.46002 22.31 6.90002 22.31H18.1C19.53 22.31 20.9 21.15 21.14 19.74L22.47 11.78C22.63 10.8 22.13 9.49 21.36 8.87L14.43 3.33C13.36 2.47 11.63 2.47 10.57 3.32Z"
+                        stroke="#fff"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                    خانه
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <svg
+                      width="24"
+                      height="25"
+                      viewBox="0 0 24 25"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g clip-path="url(#clip0_11_20160)">
+                        <path
+                          d="M19.79 7.77L16.76 4.74C15.61 3.59 14.04 3.65 13.27 4.88L11.58 7.55L16.98 12.95L19.65 11.26C20.8 10.53 20.87 8.85 19.79 7.77Z"
+                          stroke="#292D32"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M11.58 7.54999L7.64999 7.30999C5.45999 7.17999 4.68999 7.84999 4.44999 9.93999L3.46999 18.26C3.25999 20.01 4.52999 21.27 6.26999 21.06L14.59 20.08C16.68 19.83 17.44 19.07 17.22 16.88L16.99 12.95"
+                          stroke="#292D32"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M4.60999 19.92L7.63999 16.88"
+                          stroke="#292D32"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_11_20160">
+                          <rect
+                            width="24"
+                            height="24"
+                            fill="white"
+                            transform="translate(0 0.5)"
+                          />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                    طراحان
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <svg
+                      width="25"
+                      height="25"
+                      viewBox="0 0 25 25"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M9.5 17.5V11.5L7.5 13.5"
+                        stroke="#292D32"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M9.5 11.5L11.5 13.5"
+                        stroke="#292D32"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M22.5 10.5V15.5C22.5 20.5 20.5 22.5 15.5 22.5H9.5C4.5 22.5 2.5 20.5 2.5 15.5V9.5C2.5 4.5 4.5 2.5 9.5 2.5H14.5"
+                        stroke="#292D32"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M22.5 10.5H18.5C15.5 10.5 14.5 9.5 14.5 6.5V2.5L22.5 10.5Z"
+                        stroke="#292D32"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                    آپلود فایل
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <svg
+                      width="25"
+                      height="25"
+                      viewBox="0 0 25 25"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M17.5 18.9301H13.5L9.04999 21.89C8.38999 22.33 7.5 21.8601 7.5 21.0601V18.9301C4.5 18.9301 2.5 16.9301 2.5 13.9301V7.92999C2.5 4.92999 4.5 2.92999 7.5 2.92999H17.5C20.5 2.92999 22.5 4.92999 22.5 7.92999V13.9301C22.5 16.9301 20.5 18.9301 17.5 18.9301Z"
+                        stroke="#292D32"
+                        stroke-width="1.5"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M12.5001 11.86V11.65C12.5001 10.97 12.9201 10.61 13.3401 10.32C13.7501 10.04 14.16 9.68002 14.16 9.02002C14.16 8.10002 13.4201 7.35999 12.5001 7.35999C11.5801 7.35999 10.8401 8.10002 10.8401 9.02002"
+                        stroke="#292D32"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M12.4955 14.25H12.5045"
+                        stroke="#292D32"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                    سوالات متداول
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <svg
+                      width="25"
+                      height="25"
+                      viewBox="0 0 25 25"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M21.51 11.72V16.21C21.51 20.7 19.72 22.5 15.22 22.5H9.83002C9.25002 22.5 8.71998 22.47 8.22998 22.4"
+                        stroke="#292D32"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M3.54004 16.02V11.72"
+                        stroke="#292D32"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M12.5299 12.5C14.3599 12.5 15.7099 11.0101 15.5299 9.18005L14.8599 2.5H10.1899L9.51991 9.18005C9.33991 11.0101 10.6999 12.5 12.5299 12.5Z"
+                        stroke="#292D32"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M18.8301 12.5C20.8501 12.5 22.3301 10.86 22.1301 8.84998L21.85 6.09998C21.49 3.49998 20.4901 2.5 17.8701 2.5H14.8201L15.5201 9.51001C15.7001 11.16 17.1801 12.5 18.8301 12.5Z"
+                        stroke="#292D32"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M6.17004 12.5C7.82004 12.5 9.31003 11.16 9.47003 9.51001L9.69006 7.30005L10.17 2.5H7.12005C4.50005 2.5 3.50007 3.49998 3.14007 6.09998L2.86004 8.84998C2.66004 10.86 4.15004 12.5 6.17004 12.5Z"
+                        stroke="#292D32"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M9.5 19.5C9.5 20.25 9.28998 20.9601 8.91998 21.5601C8.72998 21.8801 8.49998 22.17 8.22998 22.4C8.19998 22.44 8.17 22.47 8.13 22.5C7.43 23.13 6.51 23.5 5.5 23.5C4.28 23.5 3.18997 22.95 2.46997 22.09C2.44997 22.06 2.42002 22.04 2.40002 22.01C2.28002 21.87 2.17002 21.7201 2.08002 21.5601C1.71002 20.9601 1.5 20.25 1.5 19.5C1.5 18.24 2.08 17.11 3 16.38C3.17 16.24 3.34998 16.12 3.53998 16.02C4.11998 15.69 4.79 15.5 5.5 15.5C6.5 15.5 7.39998 15.86 8.09998 16.47C8.21998 16.56 8.32999 16.67 8.42999 16.78C9.08999 17.5 9.5 18.45 9.5 19.5Z"
+                        stroke="#292D32"
+                        stroke-width="1.5"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M6.98999 19.48H4.01001"
+                        stroke="#292D32"
+                        stroke-width="1.5"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M5.5 18.02V21.01"
+                        stroke="#292D32"
+                        stroke-width="1.5"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                    ثبت سفارش
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <svg
+                      width="25"
+                      height="25"
+                      viewBox="0 0 25 25"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M3.51001 11.72V16.21C3.51001 20.7 5.31001 22.5 9.80001 22.5H15.19C19.68 22.5 21.48 20.7 21.48 16.21V11.72"
+                        stroke="#292D32"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M12.5 12.5C14.33 12.5 15.68 11.01 15.5 9.18L14.84 2.5H10.17L9.49999 9.18C9.31999 11.01 10.67 12.5 12.5 12.5Z"
+                        stroke="#292D32"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M18.81 12.5C20.83 12.5 22.31 10.86 22.11 8.85L21.83 6.1C21.47 3.5 20.47 2.5 17.85 2.5H14.8L15.5 9.51C15.67 11.16 17.16 12.5 18.81 12.5Z"
+                        stroke="#292D32"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M6.13988 12.5C7.78988 12.5 9.27988 11.16 9.43988 9.51L9.65988 7.3L10.1399 2.5H7.08988C4.46988 2.5 3.46988 3.5 3.10988 6.1L2.83988 8.85C2.63988 10.86 4.11988 12.5 6.13988 12.5Z"
+                        stroke="#292D32"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M12.5 17.5C10.83 17.5 10 18.33 10 20V22.5H15V20C15 18.33 14.17 17.5 12.5 17.5Z"
+                        stroke="#292D32"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                    فروشگاه
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <svg
+                      width="25"
+                      height="25"
+                      viewBox="0 0 25 25"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M11.2499 2.95001C11.9499 2.36001 13.0799 2.36001 13.7599 2.95001L15.3399 4.30001C15.6399 4.55001 16.2099 4.76001 16.6099 4.76001H18.3099C19.3699 4.76001 20.2399 5.63001 20.2399 6.69001V8.39001C20.2399 8.79001 20.4499 9.35001 20.6999 9.65001L22.0499 11.23C22.6399 11.93 22.6399 13.06 22.0499 13.74L20.6999 15.32C20.4499 15.62 20.2399 16.18 20.2399 16.58V18.28C20.2399 19.34 19.3699 20.21 18.3099 20.21H16.6099C16.2099 20.21 15.6499 20.42 15.3499 20.67L13.7699 22.02C13.0699 22.61 11.9399 22.61 11.2599 22.02L9.67988 20.67C9.37988 20.42 8.80988 20.21 8.41988 20.21H6.66988C5.60988 20.21 4.73988 19.34 4.73988 18.28V16.57C4.73988 16.18 4.53988 15.61 4.28988 15.32L2.93988 13.73C2.35988 13.04 2.35988 11.92 2.93988 11.23L4.28988 9.64001C4.53988 9.34001 4.73988 8.78001 4.73988 8.39001V6.70001C4.73988 5.64001 5.60988 4.77001 6.66988 4.77001H8.39988C8.79988 4.77001 9.35988 4.56001 9.65988 4.31001L11.2499 2.95001Z"
+                        stroke="#292D32"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M12.5 8.63V13.46"
+                        stroke="#292D32"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M12.4946 16.5H12.5036"
+                        stroke="#292D32"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                    درباره ما
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <svg
+                      width="24"
+                      height="25"
+                      viewBox="0 0 24 25"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M21.97 18.83C21.97 19.19 21.89 19.56 21.72 19.92C21.55 20.28 21.33 20.62 21.04 20.94C20.55 21.48 20.01 21.87 19.4 22.12C18.8 22.37 18.15 22.5 17.45 22.5C16.43 22.5 15.34 22.26 14.19 21.77C13.04 21.28 11.89 20.62 10.75 19.79C9.6 18.95 8.51 18.02 7.47 16.99C6.44 15.95 5.51 14.86 4.68 13.72C3.86 12.58 3.2 11.44 2.72 10.31C2.24 9.17 2 8.08 2 7.04C2 6.36 2.12 5.71 2.36 5.11C2.6 4.5 2.98 3.94 3.51 3.44C4.15 2.81 4.85 2.5 5.59 2.5C5.87 2.5 6.15 2.56 6.4 2.68C6.66 2.8 6.89 2.98 7.07 3.24L9.39 6.51C9.57 6.76 9.7 6.99 9.79 7.21C9.88 7.42 9.93 7.63 9.93 7.82C9.93 8.06 9.86 8.3 9.72 8.53C9.59 8.76 9.4 9 9.16 9.24L8.4 10.03C8.29 10.14 8.24 10.27 8.24 10.43C8.24 10.51 8.25 10.58 8.27 10.66C8.3 10.74 8.33 10.8 8.35 10.86C8.53 11.19 8.84 11.62 9.28 12.14C9.73 12.66 10.21 13.19 10.73 13.72C11.27 14.25 11.79 14.74 12.32 15.19C12.84 15.63 13.27 15.93 13.61 16.11C13.66 16.13 13.72 16.16 13.79 16.19C13.87 16.22 13.95 16.23 14.04 16.23C14.21 16.23 14.34 16.17 14.45 16.06L15.21 15.31C15.46 15.06 15.7 14.87 15.93 14.75C16.16 14.61 16.39 14.54 16.64 14.54C16.83 14.54 17.03 14.58 17.25 14.67C17.47 14.76 17.7 14.89 17.95 15.06L21.26 17.41C21.52 17.59 21.7 17.8 21.81 18.05C21.91 18.3 21.97 18.55 21.97 18.83Z"
+                        stroke="#292D32"
+                        stroke-width="1.5"
+                        stroke-miterlimit="10"
+                      />
+                    </svg>
+                    تماس با ما
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="info-website">
+        <div class="container">
+          <div
+            class="row align-items-center flex-column justify-content-lg-evenly justify-content-between position-relative flex-row-reverse"
+          >
+            <div class="col-lg-4 col-md-7 col-8 mx-auto mx-lg-0">
+              <img src="assets/img/Frame2.png" class="disegn-pic-main" alt="" />
+            </div>
+            <div
+              class="col-lg-4 col-md-4 col-12 d-flex align-items-center flex-column mb-5"
+            >
+              <h1 class="text-center casablanca-font c1">
+                Tarhamo <br />
+                Store
+              </h1>
+              <span class="c2"></span>
+              <p class="text-design">تنوع بالای طرح ها با ظرافت خاص</p>
+            </div>
+          </div>
+        </div>
+        <div class="wave-img">
+          <img src="assets/img/Frame.png" alt="" />
+        </div>
+      </section>
+      <section class="my-designers mt-lg-5 pt-lg-5 pt-3 mt-5">
+        <div class="container mt-lg-5 pt-lg-5 pt-0 mt-0">
+          <div class="row">
+            <h6>پر طرفدارترین طرح ها</h6>
+            <h2 class="casablanca-font">طرح های محبوب</h2>
+          </div>
+        </div>
+        <div class="container my-5">
+          <div class="swiper mySwiper1">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="card-item-product">
+                  <div class="z1 position-relative">
+                    <!-- hover div -->
+                    <div class="imgHover">
+                      مشاهده
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="25"
+                        height="24"
+                        viewBox="0 0 25 24"
+                        fill="none"
+                      >
+                        <path
+                          d="M16.3001 4.07998C16.3001 4.26998 16.2301 4.45998 16.0801 4.60998L9.56008 11.13C9.08008 11.61 9.08008 12.39 9.56008 12.87L16.0801 19.39C16.3701 19.68 16.3701 20.16 16.0801 20.45C15.7901 20.74 15.3101 20.74 15.0201 20.45L8.50008 13.93C7.44008 12.87 7.44008 11.14 8.50008 10.07L15.0201 3.54998C15.3101 3.25998 15.7901 3.25998 16.0801 3.54998C16.2201 3.69998 16.3001 3.88998 16.3001 4.07998Z"
+                          fill="white"
+                        />
+                      </svg>
+                    </div>
+
+                    <img src="assets/img/Rectangle 154.png" alt="" />
+
+                    <!-- heart -->
+                    <span class="heart"
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="25"
+                        height="24"
+                        viewBox="0 0 25 24"
+                        fill="white"
+                      >
+                        <path
+                          d="M13.37 20.81C13.03 20.93 12.47 20.93 12.13 20.81C9.23 19.82 2.75 15.69 2.75 8.68998C2.75 5.59998 5.24 3.09998 8.31 3.09998C10.13 3.09998 11.74 3.97998 12.75 5.33998C13.76 3.97998 15.38 3.09998 17.19 3.09998C20.26 3.09998 22.75 5.59998 22.75 8.68998C22.75 15.69 16.27 19.82 13.37 20.81Z"
+                          stroke="black"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        /></svg
+                    ></span>
+                  </div>
+
+                  <div class="z2">
+                    <p>گوشواره اسپرت</p>
+                    <p>100,000 تومان</p>
+                  </div>
+
+                  <div class="z3">
+                    <p>کد GS1</p>
+                    <div>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="17"
+                        height="16"
+                        viewBox="0 0 17 16"
+                        fill="none"
+                      >
+                        <path
+                          d="M7.77447 1.08156C7.92415 0.620902 8.57585 0.620907 8.72553 1.08156L9.90735 4.71885C10.1082 5.33688 10.6841 5.75532 11.3339 5.75532H15.1584C15.6428 5.75532 15.8442 6.37513 15.4523 6.65983L12.3582 8.9078C11.8325 9.28976 11.6125 9.96681 11.8133 10.5848L12.9952 14.2221C13.1448 14.6828 12.6176 15.0659 12.2257 14.7812L9.13168 12.5332C8.60595 12.1512 7.89405 12.1512 7.36832 12.5332L4.27426 14.7812C3.8824 15.0659 3.35516 14.6828 3.50484 14.2221L4.68667 10.5848C4.88748 9.96682 4.66749 9.28976 4.14176 8.9078L1.0477 6.65983C0.65584 6.37513 0.85723 5.75532 1.34159 5.75532H5.16606C5.8159 5.75532 6.39183 5.33688 6.59265 4.71885L7.77447 1.08156Z"
+                          stroke="#6E93C4"
+                        />
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="17"
+                        height="16"
+                        viewBox="0 0 17 16"
+                        fill="none"
+                      >
+                        <path
+                          d="M7.29894 0.927052C7.5983 0.0057416 8.9017 0.00573945 9.20106 0.92705L10.3829 4.56434C10.5168 4.97636 10.9007 5.25532 11.3339 5.25532H15.1584C16.1271 5.25532 16.5299 6.49494 15.7462 7.06434L12.6521 9.31231C12.3016 9.56695 12.155 10.0183 12.2889 10.4303L13.4707 14.0676C13.77 14.9889 12.7156 15.7551 11.9318 15.1857L8.83779 12.9377C8.4873 12.6831 8.0127 12.6831 7.66222 12.9377L4.56815 15.1857C3.78444 15.7551 2.72996 14.9889 3.02931 14.0676L4.21114 10.4303C4.34501 10.0183 4.19835 9.56695 3.84787 9.31231L0.753806 7.06434C-0.0299077 6.49494 0.372867 5.25532 1.34159 5.25532H5.16606C5.59929 5.25532 5.98324 4.97636 6.11712 4.56434L7.29894 0.927052Z"
+                          fill="#6E93C4"
+                        />
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="17"
+                        height="16"
+                        viewBox="0 0 17 16"
+                        fill="none"
+                      >
+                        <path
+                          d="M7.29894 0.927052C7.5983 0.0057416 8.9017 0.00573945 9.20106 0.92705L10.3829 4.56434C10.5168 4.97636 10.9007 5.25532 11.3339 5.25532H15.1584C16.1271 5.25532 16.5299 6.49494 15.7462 7.06434L12.6521 9.31231C12.3016 9.56695 12.155 10.0183 12.2889 10.4303L13.4707 14.0676C13.77 14.9889 12.7156 15.7551 11.9318 15.1857L8.83779 12.9377C8.4873 12.6831 8.0127 12.6831 7.66222 12.9377L4.56815 15.1857C3.78444 15.7551 2.72996 14.9889 3.02931 14.0676L4.21114 10.4303C4.34501 10.0183 4.19835 9.56695 3.84787 9.31231L0.753806 7.06434C-0.0299077 6.49494 0.372867 5.25532 1.34159 5.25532H5.16606C5.59929 5.25532 5.98324 4.97636 6.11712 4.56434L7.29894 0.927052Z"
+                          fill="#6E93C4"
+                        />
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="17"
+                        height="16"
+                        viewBox="0 0 17 16"
+                        fill="none"
+                      >
+                        <path
+                          d="M7.29894 0.927052C7.5983 0.0057416 8.9017 0.00573945 9.20106 0.92705L10.3829 4.56434C10.5168 4.97636 10.9007 5.25532 11.3339 5.25532H15.1584C16.1271 5.25532 16.5299 6.49494 15.7462 7.06434L12.6521 9.31231C12.3016 9.56695 12.155 10.0183 12.2889 10.4303L13.4707 14.0676C13.77 14.9889 12.7156 15.7551 11.9318 15.1857L8.83779 12.9377C8.4873 12.6831 8.0127 12.6831 7.66222 12.9377L4.56815 15.1857C3.78444 15.7551 2.72996 14.9889 3.02931 14.0676L4.21114 10.4303C4.34501 10.0183 4.19835 9.56695 3.84787 9.31231L0.753806 7.06434C-0.0299077 6.49494 0.372867 5.25532 1.34159 5.25532H5.16606C5.59929 5.25532 5.98324 4.97636 6.11712 4.56434L7.29894 0.927052Z"
+                          fill="#6E93C4"
+                        />
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="17"
+                        height="16"
+                        viewBox="0 0 17 16"
+                        fill="none"
+                      >
+                        <path
+                          d="M7.29894 0.927052C7.5983 0.0057416 8.9017 0.00573945 9.20106 0.92705L10.3829 4.56434C10.5168 4.97636 10.9007 5.25532 11.3339 5.25532H15.1584C16.1271 5.25532 16.5299 6.49494 15.7462 7.06434L12.6521 9.31231C12.3016 9.56695 12.155 10.0183 12.2889 10.4303L13.4707 14.0676C13.77 14.9889 12.7156 15.7551 11.9318 15.1857L8.83779 12.9377C8.4873 12.6831 8.0127 12.6831 7.66222 12.9377L4.56815 15.1857C3.78444 15.7551 2.72996 14.9889 3.02931 14.0676L4.21114 10.4303C4.34501 10.0183 4.19835 9.56695 3.84787 9.31231L0.753806 7.06434C-0.0299077 6.49494 0.372867 5.25532 1.34159 5.25532H5.16606C5.59929 5.25532 5.98324 4.97636 6.11712 4.56434L7.29894 0.927052Z"
+                          fill="#6E93C4"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+
+                  <button class="buy-btn">
+                    <img
+                      src="assets/img/shopping-bag.svg"
+                      width="24px"
+                      height="24px"
+                      alt=""
+                    />
+                    <p>خرید</p>
+                  </button>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card-item-product">
+                  <div class="z1 position-relative">
+                    <!-- hover div -->
+                    <div class="imgHover">
+                      مشاهده
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="25"
+                        height="24"
+                        viewBox="0 0 25 24"
+                        fill="none"
+                      >
+                        <path
+                          d="M16.3001 4.07998C16.3001 4.26998 16.2301 4.45998 16.0801 4.60998L9.56008 11.13C9.08008 11.61 9.08008 12.39 9.56008 12.87L16.0801 19.39C16.3701 19.68 16.3701 20.16 16.0801 20.45C15.7901 20.74 15.3101 20.74 15.0201 20.45L8.50008 13.93C7.44008 12.87 7.44008 11.14 8.50008 10.07L15.0201 3.54998C15.3101 3.25998 15.7901 3.25998 16.0801 3.54998C16.2201 3.69998 16.3001 3.88998 16.3001 4.07998Z"
+                          fill="white"
+                        />
+                      </svg>
+                    </div>
+
+                    <img src="assets/img/Rectangle 154.png" alt="" />
+
+                    <!-- heart -->
+                    <span class="heart"
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="25"
+                        height="24"
+                        viewBox="0 0 25 24"
+                        fill="white"
+                      >
+                        <path
+                          d="M13.37 20.81C13.03 20.93 12.47 20.93 12.13 20.81C9.23 19.82 2.75 15.69 2.75 8.68998C2.75 5.59998 5.24 3.09998 8.31 3.09998C10.13 3.09998 11.74 3.97998 12.75 5.33998C13.76 3.97998 15.38 3.09998 17.19 3.09998C20.26 3.09998 22.75 5.59998 22.75 8.68998C22.75 15.69 16.27 19.82 13.37 20.81Z"
+                          stroke="black"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        /></svg
+                    ></span>
+                  </div>
+
+                  <div class="z2">
+                    <p>گوشواره اسپرت</p>
+                    <p>100,000 تومان</p>
+                  </div>
+
+                  <div class="z3">
+                    <p>کد GS1</p>
+                    <div>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="17"
+                        height="16"
+                        viewBox="0 0 17 16"
+                        fill="none"
+                      >
+                        <path
+                          d="M7.77447 1.08156C7.92415 0.620902 8.57585 0.620907 8.72553 1.08156L9.90735 4.71885C10.1082 5.33688 10.6841 5.75532 11.3339 5.75532H15.1584C15.6428 5.75532 15.8442 6.37513 15.4523 6.65983L12.3582 8.9078C11.8325 9.28976 11.6125 9.96681 11.8133 10.5848L12.9952 14.2221C13.1448 14.6828 12.6176 15.0659 12.2257 14.7812L9.13168 12.5332C8.60595 12.1512 7.89405 12.1512 7.36832 12.5332L4.27426 14.7812C3.8824 15.0659 3.35516 14.6828 3.50484 14.2221L4.68667 10.5848C4.88748 9.96682 4.66749 9.28976 4.14176 8.9078L1.0477 6.65983C0.65584 6.37513 0.85723 5.75532 1.34159 5.75532H5.16606C5.8159 5.75532 6.39183 5.33688 6.59265 4.71885L7.77447 1.08156Z"
+                          stroke="#6E93C4"
+                        />
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="17"
+                        height="16"
+                        viewBox="0 0 17 16"
+                        fill="none"
+                      >
+                        <path
+                          d="M7.29894 0.927052C7.5983 0.0057416 8.9017 0.00573945 9.20106 0.92705L10.3829 4.56434C10.5168 4.97636 10.9007 5.25532 11.3339 5.25532H15.1584C16.1271 5.25532 16.5299 6.49494 15.7462 7.06434L12.6521 9.31231C12.3016 9.56695 12.155 10.0183 12.2889 10.4303L13.4707 14.0676C13.77 14.9889 12.7156 15.7551 11.9318 15.1857L8.83779 12.9377C8.4873 12.6831 8.0127 12.6831 7.66222 12.9377L4.56815 15.1857C3.78444 15.7551 2.72996 14.9889 3.02931 14.0676L4.21114 10.4303C4.34501 10.0183 4.19835 9.56695 3.84787 9.31231L0.753806 7.06434C-0.0299077 6.49494 0.372867 5.25532 1.34159 5.25532H5.16606C5.59929 5.25532 5.98324 4.97636 6.11712 4.56434L7.29894 0.927052Z"
+                          fill="#6E93C4"
+                        />
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="17"
+                        height="16"
+                        viewBox="0 0 17 16"
+                        fill="none"
+                      >
+                        <path
+                          d="M7.29894 0.927052C7.5983 0.0057416 8.9017 0.00573945 9.20106 0.92705L10.3829 4.56434C10.5168 4.97636 10.9007 5.25532 11.3339 5.25532H15.1584C16.1271 5.25532 16.5299 6.49494 15.7462 7.06434L12.6521 9.31231C12.3016 9.56695 12.155 10.0183 12.2889 10.4303L13.4707 14.0676C13.77 14.9889 12.7156 15.7551 11.9318 15.1857L8.83779 12.9377C8.4873 12.6831 8.0127 12.6831 7.66222 12.9377L4.56815 15.1857C3.78444 15.7551 2.72996 14.9889 3.02931 14.0676L4.21114 10.4303C4.34501 10.0183 4.19835 9.56695 3.84787 9.31231L0.753806 7.06434C-0.0299077 6.49494 0.372867 5.25532 1.34159 5.25532H5.16606C5.59929 5.25532 5.98324 4.97636 6.11712 4.56434L7.29894 0.927052Z"
+                          fill="#6E93C4"
+                        />
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="17"
+                        height="16"
+                        viewBox="0 0 17 16"
+                        fill="none"
+                      >
+                        <path
+                          d="M7.29894 0.927052C7.5983 0.0057416 8.9017 0.00573945 9.20106 0.92705L10.3829 4.56434C10.5168 4.97636 10.9007 5.25532 11.3339 5.25532H15.1584C16.1271 5.25532 16.5299 6.49494 15.7462 7.06434L12.6521 9.31231C12.3016 9.56695 12.155 10.0183 12.2889 10.4303L13.4707 14.0676C13.77 14.9889 12.7156 15.7551 11.9318 15.1857L8.83779 12.9377C8.4873 12.6831 8.0127 12.6831 7.66222 12.9377L4.56815 15.1857C3.78444 15.7551 2.72996 14.9889 3.02931 14.0676L4.21114 10.4303C4.34501 10.0183 4.19835 9.56695 3.84787 9.31231L0.753806 7.06434C-0.0299077 6.49494 0.372867 5.25532 1.34159 5.25532H5.16606C5.59929 5.25532 5.98324 4.97636 6.11712 4.56434L7.29894 0.927052Z"
+                          fill="#6E93C4"
+                        />
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="17"
+                        height="16"
+                        viewBox="0 0 17 16"
+                        fill="none"
+                      >
+                        <path
+                          d="M7.29894 0.927052C7.5983 0.0057416 8.9017 0.00573945 9.20106 0.92705L10.3829 4.56434C10.5168 4.97636 10.9007 5.25532 11.3339 5.25532H15.1584C16.1271 5.25532 16.5299 6.49494 15.7462 7.06434L12.6521 9.31231C12.3016 9.56695 12.155 10.0183 12.2889 10.4303L13.4707 14.0676C13.77 14.9889 12.7156 15.7551 11.9318 15.1857L8.83779 12.9377C8.4873 12.6831 8.0127 12.6831 7.66222 12.9377L4.56815 15.1857C3.78444 15.7551 2.72996 14.9889 3.02931 14.0676L4.21114 10.4303C4.34501 10.0183 4.19835 9.56695 3.84787 9.31231L0.753806 7.06434C-0.0299077 6.49494 0.372867 5.25532 1.34159 5.25532H5.16606C5.59929 5.25532 5.98324 4.97636 6.11712 4.56434L7.29894 0.927052Z"
+                          fill="#6E93C4"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+
+                  <button class="buy-btn">
+                    <img
+                      src="assets/img/shopping-bag.svg"
+                      width="24px"
+                      height="24px"
+                      alt=""
+                    />
+                    <p>خرید</p>
+                  </button>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card-item-product">
+                  <div class="z1 position-relative">
+                    <!-- hover div -->
+                    <div class="imgHover">
+                      مشاهده
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="25"
+                        height="24"
+                        viewBox="0 0 25 24"
+                        fill="none"
+                      >
+                        <path
+                          d="M16.3001 4.07998C16.3001 4.26998 16.2301 4.45998 16.0801 4.60998L9.56008 11.13C9.08008 11.61 9.08008 12.39 9.56008 12.87L16.0801 19.39C16.3701 19.68 16.3701 20.16 16.0801 20.45C15.7901 20.74 15.3101 20.74 15.0201 20.45L8.50008 13.93C7.44008 12.87 7.44008 11.14 8.50008 10.07L15.0201 3.54998C15.3101 3.25998 15.7901 3.25998 16.0801 3.54998C16.2201 3.69998 16.3001 3.88998 16.3001 4.07998Z"
+                          fill="white"
+                        />
+                      </svg>
+                    </div>
+
+                    <img src="assets/img/Rectangle 154.png" alt="" />
+
+                    <!-- heart -->
+                    <span class="heart"
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="25"
+                        height="24"
+                        viewBox="0 0 25 24"
+                        fill="white"
+                      >
+                        <path
+                          d="M13.37 20.81C13.03 20.93 12.47 20.93 12.13 20.81C9.23 19.82 2.75 15.69 2.75 8.68998C2.75 5.59998 5.24 3.09998 8.31 3.09998C10.13 3.09998 11.74 3.97998 12.75 5.33998C13.76 3.97998 15.38 3.09998 17.19 3.09998C20.26 3.09998 22.75 5.59998 22.75 8.68998C22.75 15.69 16.27 19.82 13.37 20.81Z"
+                          stroke="black"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        /></svg
+                    ></span>
+                  </div>
+
+                  <div class="z2">
+                    <p>گوشواره اسپرت</p>
+                    <p>100,000 تومان</p>
+                  </div>
+
+                  <div class="z3">
+                    <p>کد GS1</p>
+                    <div>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="17"
+                        height="16"
+                        viewBox="0 0 17 16"
+                        fill="none"
+                      >
+                        <path
+                          d="M7.77447 1.08156C7.92415 0.620902 8.57585 0.620907 8.72553 1.08156L9.90735 4.71885C10.1082 5.33688 10.6841 5.75532 11.3339 5.75532H15.1584C15.6428 5.75532 15.8442 6.37513 15.4523 6.65983L12.3582 8.9078C11.8325 9.28976 11.6125 9.96681 11.8133 10.5848L12.9952 14.2221C13.1448 14.6828 12.6176 15.0659 12.2257 14.7812L9.13168 12.5332C8.60595 12.1512 7.89405 12.1512 7.36832 12.5332L4.27426 14.7812C3.8824 15.0659 3.35516 14.6828 3.50484 14.2221L4.68667 10.5848C4.88748 9.96682 4.66749 9.28976 4.14176 8.9078L1.0477 6.65983C0.65584 6.37513 0.85723 5.75532 1.34159 5.75532H5.16606C5.8159 5.75532 6.39183 5.33688 6.59265 4.71885L7.77447 1.08156Z"
+                          stroke="#6E93C4"
+                        />
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="17"
+                        height="16"
+                        viewBox="0 0 17 16"
+                        fill="none"
+                      >
+                        <path
+                          d="M7.29894 0.927052C7.5983 0.0057416 8.9017 0.00573945 9.20106 0.92705L10.3829 4.56434C10.5168 4.97636 10.9007 5.25532 11.3339 5.25532H15.1584C16.1271 5.25532 16.5299 6.49494 15.7462 7.06434L12.6521 9.31231C12.3016 9.56695 12.155 10.0183 12.2889 10.4303L13.4707 14.0676C13.77 14.9889 12.7156 15.7551 11.9318 15.1857L8.83779 12.9377C8.4873 12.6831 8.0127 12.6831 7.66222 12.9377L4.56815 15.1857C3.78444 15.7551 2.72996 14.9889 3.02931 14.0676L4.21114 10.4303C4.34501 10.0183 4.19835 9.56695 3.84787 9.31231L0.753806 7.06434C-0.0299077 6.49494 0.372867 5.25532 1.34159 5.25532H5.16606C5.59929 5.25532 5.98324 4.97636 6.11712 4.56434L7.29894 0.927052Z"
+                          fill="#6E93C4"
+                        />
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="17"
+                        height="16"
+                        viewBox="0 0 17 16"
+                        fill="none"
+                      >
+                        <path
+                          d="M7.29894 0.927052C7.5983 0.0057416 8.9017 0.00573945 9.20106 0.92705L10.3829 4.56434C10.5168 4.97636 10.9007 5.25532 11.3339 5.25532H15.1584C16.1271 5.25532 16.5299 6.49494 15.7462 7.06434L12.6521 9.31231C12.3016 9.56695 12.155 10.0183 12.2889 10.4303L13.4707 14.0676C13.77 14.9889 12.7156 15.7551 11.9318 15.1857L8.83779 12.9377C8.4873 12.6831 8.0127 12.6831 7.66222 12.9377L4.56815 15.1857C3.78444 15.7551 2.72996 14.9889 3.02931 14.0676L4.21114 10.4303C4.34501 10.0183 4.19835 9.56695 3.84787 9.31231L0.753806 7.06434C-0.0299077 6.49494 0.372867 5.25532 1.34159 5.25532H5.16606C5.59929 5.25532 5.98324 4.97636 6.11712 4.56434L7.29894 0.927052Z"
+                          fill="#6E93C4"
+                        />
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="17"
+                        height="16"
+                        viewBox="0 0 17 16"
+                        fill="none"
+                      >
+                        <path
+                          d="M7.29894 0.927052C7.5983 0.0057416 8.9017 0.00573945 9.20106 0.92705L10.3829 4.56434C10.5168 4.97636 10.9007 5.25532 11.3339 5.25532H15.1584C16.1271 5.25532 16.5299 6.49494 15.7462 7.06434L12.6521 9.31231C12.3016 9.56695 12.155 10.0183 12.2889 10.4303L13.4707 14.0676C13.77 14.9889 12.7156 15.7551 11.9318 15.1857L8.83779 12.9377C8.4873 12.6831 8.0127 12.6831 7.66222 12.9377L4.56815 15.1857C3.78444 15.7551 2.72996 14.9889 3.02931 14.0676L4.21114 10.4303C4.34501 10.0183 4.19835 9.56695 3.84787 9.31231L0.753806 7.06434C-0.0299077 6.49494 0.372867 5.25532 1.34159 5.25532H5.16606C5.59929 5.25532 5.98324 4.97636 6.11712 4.56434L7.29894 0.927052Z"
+                          fill="#6E93C4"
+                        />
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="17"
+                        height="16"
+                        viewBox="0 0 17 16"
+                        fill="none"
+                      >
+                        <path
+                          d="M7.29894 0.927052C7.5983 0.0057416 8.9017 0.00573945 9.20106 0.92705L10.3829 4.56434C10.5168 4.97636 10.9007 5.25532 11.3339 5.25532H15.1584C16.1271 5.25532 16.5299 6.49494 15.7462 7.06434L12.6521 9.31231C12.3016 9.56695 12.155 10.0183 12.2889 10.4303L13.4707 14.0676C13.77 14.9889 12.7156 15.7551 11.9318 15.1857L8.83779 12.9377C8.4873 12.6831 8.0127 12.6831 7.66222 12.9377L4.56815 15.1857C3.78444 15.7551 2.72996 14.9889 3.02931 14.0676L4.21114 10.4303C4.34501 10.0183 4.19835 9.56695 3.84787 9.31231L0.753806 7.06434C-0.0299077 6.49494 0.372867 5.25532 1.34159 5.25532H5.16606C5.59929 5.25532 5.98324 4.97636 6.11712 4.56434L7.29894 0.927052Z"
+                          fill="#6E93C4"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+
+                  <button class="buy-btn">
+                    <img
+                      src="assets/img/shopping-bag.svg"
+                      width="24px"
+                      height="24px"
+                      alt=""
+                    />
+                    <p>خرید</p>
+                  </button>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card-item-product">
+                  <div class="z1 position-relative">
+                    <!-- hover div -->
+                    <div class="imgHover">
+                      مشاهده
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="25"
+                        height="24"
+                        viewBox="0 0 25 24"
+                        fill="none"
+                      >
+                        <path
+                          d="M16.3001 4.07998C16.3001 4.26998 16.2301 4.45998 16.0801 4.60998L9.56008 11.13C9.08008 11.61 9.08008 12.39 9.56008 12.87L16.0801 19.39C16.3701 19.68 16.3701 20.16 16.0801 20.45C15.7901 20.74 15.3101 20.74 15.0201 20.45L8.50008 13.93C7.44008 12.87 7.44008 11.14 8.50008 10.07L15.0201 3.54998C15.3101 3.25998 15.7901 3.25998 16.0801 3.54998C16.2201 3.69998 16.3001 3.88998 16.3001 4.07998Z"
+                          fill="white"
+                        />
+                      </svg>
+                    </div>
+
+                    <img src="assets/img/Rectangle 154.png" alt="" />
+
+                    <!-- heart -->
+                    <span class="heart"
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="25"
+                        height="24"
+                        viewBox="0 0 25 24"
+                        fill="white"
+                      >
+                        <path
+                          d="M13.37 20.81C13.03 20.93 12.47 20.93 12.13 20.81C9.23 19.82 2.75 15.69 2.75 8.68998C2.75 5.59998 5.24 3.09998 8.31 3.09998C10.13 3.09998 11.74 3.97998 12.75 5.33998C13.76 3.97998 15.38 3.09998 17.19 3.09998C20.26 3.09998 22.75 5.59998 22.75 8.68998C22.75 15.69 16.27 19.82 13.37 20.81Z"
+                          stroke="black"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        /></svg
+                    ></span>
+                  </div>
+
+                  <div class="z2">
+                    <p>گوشواره اسپرت</p>
+                    <p>100,000 تومان</p>
+                  </div>
+
+                  <div class="z3">
+                    <p>کد GS1</p>
+                    <div>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="17"
+                        height="16"
+                        viewBox="0 0 17 16"
+                        fill="none"
+                      >
+                        <path
+                          d="M7.77447 1.08156C7.92415 0.620902 8.57585 0.620907 8.72553 1.08156L9.90735 4.71885C10.1082 5.33688 10.6841 5.75532 11.3339 5.75532H15.1584C15.6428 5.75532 15.8442 6.37513 15.4523 6.65983L12.3582 8.9078C11.8325 9.28976 11.6125 9.96681 11.8133 10.5848L12.9952 14.2221C13.1448 14.6828 12.6176 15.0659 12.2257 14.7812L9.13168 12.5332C8.60595 12.1512 7.89405 12.1512 7.36832 12.5332L4.27426 14.7812C3.8824 15.0659 3.35516 14.6828 3.50484 14.2221L4.68667 10.5848C4.88748 9.96682 4.66749 9.28976 4.14176 8.9078L1.0477 6.65983C0.65584 6.37513 0.85723 5.75532 1.34159 5.75532H5.16606C5.8159 5.75532 6.39183 5.33688 6.59265 4.71885L7.77447 1.08156Z"
+                          stroke="#6E93C4"
+                        />
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="17"
+                        height="16"
+                        viewBox="0 0 17 16"
+                        fill="none"
+                      >
+                        <path
+                          d="M7.29894 0.927052C7.5983 0.0057416 8.9017 0.00573945 9.20106 0.92705L10.3829 4.56434C10.5168 4.97636 10.9007 5.25532 11.3339 5.25532H15.1584C16.1271 5.25532 16.5299 6.49494 15.7462 7.06434L12.6521 9.31231C12.3016 9.56695 12.155 10.0183 12.2889 10.4303L13.4707 14.0676C13.77 14.9889 12.7156 15.7551 11.9318 15.1857L8.83779 12.9377C8.4873 12.6831 8.0127 12.6831 7.66222 12.9377L4.56815 15.1857C3.78444 15.7551 2.72996 14.9889 3.02931 14.0676L4.21114 10.4303C4.34501 10.0183 4.19835 9.56695 3.84787 9.31231L0.753806 7.06434C-0.0299077 6.49494 0.372867 5.25532 1.34159 5.25532H5.16606C5.59929 5.25532 5.98324 4.97636 6.11712 4.56434L7.29894 0.927052Z"
+                          fill="#6E93C4"
+                        />
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="17"
+                        height="16"
+                        viewBox="0 0 17 16"
+                        fill="none"
+                      >
+                        <path
+                          d="M7.29894 0.927052C7.5983 0.0057416 8.9017 0.00573945 9.20106 0.92705L10.3829 4.56434C10.5168 4.97636 10.9007 5.25532 11.3339 5.25532H15.1584C16.1271 5.25532 16.5299 6.49494 15.7462 7.06434L12.6521 9.31231C12.3016 9.56695 12.155 10.0183 12.2889 10.4303L13.4707 14.0676C13.77 14.9889 12.7156 15.7551 11.9318 15.1857L8.83779 12.9377C8.4873 12.6831 8.0127 12.6831 7.66222 12.9377L4.56815 15.1857C3.78444 15.7551 2.72996 14.9889 3.02931 14.0676L4.21114 10.4303C4.34501 10.0183 4.19835 9.56695 3.84787 9.31231L0.753806 7.06434C-0.0299077 6.49494 0.372867 5.25532 1.34159 5.25532H5.16606C5.59929 5.25532 5.98324 4.97636 6.11712 4.56434L7.29894 0.927052Z"
+                          fill="#6E93C4"
+                        />
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="17"
+                        height="16"
+                        viewBox="0 0 17 16"
+                        fill="none"
+                      >
+                        <path
+                          d="M7.29894 0.927052C7.5983 0.0057416 8.9017 0.00573945 9.20106 0.92705L10.3829 4.56434C10.5168 4.97636 10.9007 5.25532 11.3339 5.25532H15.1584C16.1271 5.25532 16.5299 6.49494 15.7462 7.06434L12.6521 9.31231C12.3016 9.56695 12.155 10.0183 12.2889 10.4303L13.4707 14.0676C13.77 14.9889 12.7156 15.7551 11.9318 15.1857L8.83779 12.9377C8.4873 12.6831 8.0127 12.6831 7.66222 12.9377L4.56815 15.1857C3.78444 15.7551 2.72996 14.9889 3.02931 14.0676L4.21114 10.4303C4.34501 10.0183 4.19835 9.56695 3.84787 9.31231L0.753806 7.06434C-0.0299077 6.49494 0.372867 5.25532 1.34159 5.25532H5.16606C5.59929 5.25532 5.98324 4.97636 6.11712 4.56434L7.29894 0.927052Z"
+                          fill="#6E93C4"
+                        />
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="17"
+                        height="16"
+                        viewBox="0 0 17 16"
+                        fill="none"
+                      >
+                        <path
+                          d="M7.29894 0.927052C7.5983 0.0057416 8.9017 0.00573945 9.20106 0.92705L10.3829 4.56434C10.5168 4.97636 10.9007 5.25532 11.3339 5.25532H15.1584C16.1271 5.25532 16.5299 6.49494 15.7462 7.06434L12.6521 9.31231C12.3016 9.56695 12.155 10.0183 12.2889 10.4303L13.4707 14.0676C13.77 14.9889 12.7156 15.7551 11.9318 15.1857L8.83779 12.9377C8.4873 12.6831 8.0127 12.6831 7.66222 12.9377L4.56815 15.1857C3.78444 15.7551 2.72996 14.9889 3.02931 14.0676L4.21114 10.4303C4.34501 10.0183 4.19835 9.56695 3.84787 9.31231L0.753806 7.06434C-0.0299077 6.49494 0.372867 5.25532 1.34159 5.25532H5.16606C5.59929 5.25532 5.98324 4.97636 6.11712 4.56434L7.29894 0.927052Z"
+                          fill="#6E93C4"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+
+                  <button class="buy-btn">
+                    <img
+                      src="assets/img/shopping-bag.svg"
+                      width="24px"
+                      height="24px"
+                      alt=""
+                    />
+                    <p>خرید</p>
+                  </button>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card-item-product">
+                  <div class="z1 position-relative">
+                    <!-- hover div -->
+                    <div class="imgHover">
+                      مشاهده
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="25"
+                        height="24"
+                        viewBox="0 0 25 24"
+                        fill="none"
+                      >
+                        <path
+                          d="M16.3001 4.07998C16.3001 4.26998 16.2301 4.45998 16.0801 4.60998L9.56008 11.13C9.08008 11.61 9.08008 12.39 9.56008 12.87L16.0801 19.39C16.3701 19.68 16.3701 20.16 16.0801 20.45C15.7901 20.74 15.3101 20.74 15.0201 20.45L8.50008 13.93C7.44008 12.87 7.44008 11.14 8.50008 10.07L15.0201 3.54998C15.3101 3.25998 15.7901 3.25998 16.0801 3.54998C16.2201 3.69998 16.3001 3.88998 16.3001 4.07998Z"
+                          fill="white"
+                        />
+                      </svg>
+                    </div>
+
+                    <img src="assets/img/Rectangle 154.png" alt="" />
+
+                    <!-- heart -->
+                    <span class="heart"
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="25"
+                        height="24"
+                        viewBox="0 0 25 24"
+                        fill="white"
+                      >
+                        <path
+                          d="M13.37 20.81C13.03 20.93 12.47 20.93 12.13 20.81C9.23 19.82 2.75 15.69 2.75 8.68998C2.75 5.59998 5.24 3.09998 8.31 3.09998C10.13 3.09998 11.74 3.97998 12.75 5.33998C13.76 3.97998 15.38 3.09998 17.19 3.09998C20.26 3.09998 22.75 5.59998 22.75 8.68998C22.75 15.69 16.27 19.82 13.37 20.81Z"
+                          stroke="black"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        /></svg
+                    ></span>
+                  </div>
+
+                  <div class="z2">
+                    <p>گوشواره اسپرت</p>
+                    <p>100,000 تومان</p>
+                  </div>
+
+                  <div class="z3">
+                    <p>کد GS1</p>
+                    <div>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="17"
+                        height="16"
+                        viewBox="0 0 17 16"
+                        fill="none"
+                      >
+                        <path
+                          d="M7.77447 1.08156C7.92415 0.620902 8.57585 0.620907 8.72553 1.08156L9.90735 4.71885C10.1082 5.33688 10.6841 5.75532 11.3339 5.75532H15.1584C15.6428 5.75532 15.8442 6.37513 15.4523 6.65983L12.3582 8.9078C11.8325 9.28976 11.6125 9.96681 11.8133 10.5848L12.9952 14.2221C13.1448 14.6828 12.6176 15.0659 12.2257 14.7812L9.13168 12.5332C8.60595 12.1512 7.89405 12.1512 7.36832 12.5332L4.27426 14.7812C3.8824 15.0659 3.35516 14.6828 3.50484 14.2221L4.68667 10.5848C4.88748 9.96682 4.66749 9.28976 4.14176 8.9078L1.0477 6.65983C0.65584 6.37513 0.85723 5.75532 1.34159 5.75532H5.16606C5.8159 5.75532 6.39183 5.33688 6.59265 4.71885L7.77447 1.08156Z"
+                          stroke="#6E93C4"
+                        />
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="17"
+                        height="16"
+                        viewBox="0 0 17 16"
+                        fill="none"
+                      >
+                        <path
+                          d="M7.29894 0.927052C7.5983 0.0057416 8.9017 0.00573945 9.20106 0.92705L10.3829 4.56434C10.5168 4.97636 10.9007 5.25532 11.3339 5.25532H15.1584C16.1271 5.25532 16.5299 6.49494 15.7462 7.06434L12.6521 9.31231C12.3016 9.56695 12.155 10.0183 12.2889 10.4303L13.4707 14.0676C13.77 14.9889 12.7156 15.7551 11.9318 15.1857L8.83779 12.9377C8.4873 12.6831 8.0127 12.6831 7.66222 12.9377L4.56815 15.1857C3.78444 15.7551 2.72996 14.9889 3.02931 14.0676L4.21114 10.4303C4.34501 10.0183 4.19835 9.56695 3.84787 9.31231L0.753806 7.06434C-0.0299077 6.49494 0.372867 5.25532 1.34159 5.25532H5.16606C5.59929 5.25532 5.98324 4.97636 6.11712 4.56434L7.29894 0.927052Z"
+                          fill="#6E93C4"
+                        />
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="17"
+                        height="16"
+                        viewBox="0 0 17 16"
+                        fill="none"
+                      >
+                        <path
+                          d="M7.29894 0.927052C7.5983 0.0057416 8.9017 0.00573945 9.20106 0.92705L10.3829 4.56434C10.5168 4.97636 10.9007 5.25532 11.3339 5.25532H15.1584C16.1271 5.25532 16.5299 6.49494 15.7462 7.06434L12.6521 9.31231C12.3016 9.56695 12.155 10.0183 12.2889 10.4303L13.4707 14.0676C13.77 14.9889 12.7156 15.7551 11.9318 15.1857L8.83779 12.9377C8.4873 12.6831 8.0127 12.6831 7.66222 12.9377L4.56815 15.1857C3.78444 15.7551 2.72996 14.9889 3.02931 14.0676L4.21114 10.4303C4.34501 10.0183 4.19835 9.56695 3.84787 9.31231L0.753806 7.06434C-0.0299077 6.49494 0.372867 5.25532 1.34159 5.25532H5.16606C5.59929 5.25532 5.98324 4.97636 6.11712 4.56434L7.29894 0.927052Z"
+                          fill="#6E93C4"
+                        />
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="17"
+                        height="16"
+                        viewBox="0 0 17 16"
+                        fill="none"
+                      >
+                        <path
+                          d="M7.29894 0.927052C7.5983 0.0057416 8.9017 0.00573945 9.20106 0.92705L10.3829 4.56434C10.5168 4.97636 10.9007 5.25532 11.3339 5.25532H15.1584C16.1271 5.25532 16.5299 6.49494 15.7462 7.06434L12.6521 9.31231C12.3016 9.56695 12.155 10.0183 12.2889 10.4303L13.4707 14.0676C13.77 14.9889 12.7156 15.7551 11.9318 15.1857L8.83779 12.9377C8.4873 12.6831 8.0127 12.6831 7.66222 12.9377L4.56815 15.1857C3.78444 15.7551 2.72996 14.9889 3.02931 14.0676L4.21114 10.4303C4.34501 10.0183 4.19835 9.56695 3.84787 9.31231L0.753806 7.06434C-0.0299077 6.49494 0.372867 5.25532 1.34159 5.25532H5.16606C5.59929 5.25532 5.98324 4.97636 6.11712 4.56434L7.29894 0.927052Z"
+                          fill="#6E93C4"
+                        />
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="17"
+                        height="16"
+                        viewBox="0 0 17 16"
+                        fill="none"
+                      >
+                        <path
+                          d="M7.29894 0.927052C7.5983 0.0057416 8.9017 0.00573945 9.20106 0.92705L10.3829 4.56434C10.5168 4.97636 10.9007 5.25532 11.3339 5.25532H15.1584C16.1271 5.25532 16.5299 6.49494 15.7462 7.06434L12.6521 9.31231C12.3016 9.56695 12.155 10.0183 12.2889 10.4303L13.4707 14.0676C13.77 14.9889 12.7156 15.7551 11.9318 15.1857L8.83779 12.9377C8.4873 12.6831 8.0127 12.6831 7.66222 12.9377L4.56815 15.1857C3.78444 15.7551 2.72996 14.9889 3.02931 14.0676L4.21114 10.4303C4.34501 10.0183 4.19835 9.56695 3.84787 9.31231L0.753806 7.06434C-0.0299077 6.49494 0.372867 5.25532 1.34159 5.25532H5.16606C5.59929 5.25532 5.98324 4.97636 6.11712 4.56434L7.29894 0.927052Z"
+                          fill="#6E93C4"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+
+                  <button class="buy-btn">
+                    <img
+                      src="assets/img/shopping-bag.svg"
+                      width="24px"
+                      height="24px"
+                      alt=""
+                    />
+                    <p>خرید</p>
+                  </button>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card-item-product">
+                  <div class="z1 position-relative">
+                    <!-- hover div -->
+                    <div class="imgHover">
+                      مشاهده
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="25"
+                        height="24"
+                        viewBox="0 0 25 24"
+                        fill="none"
+                      >
+                        <path
+                          d="M16.3001 4.07998C16.3001 4.26998 16.2301 4.45998 16.0801 4.60998L9.56008 11.13C9.08008 11.61 9.08008 12.39 9.56008 12.87L16.0801 19.39C16.3701 19.68 16.3701 20.16 16.0801 20.45C15.7901 20.74 15.3101 20.74 15.0201 20.45L8.50008 13.93C7.44008 12.87 7.44008 11.14 8.50008 10.07L15.0201 3.54998C15.3101 3.25998 15.7901 3.25998 16.0801 3.54998C16.2201 3.69998 16.3001 3.88998 16.3001 4.07998Z"
+                          fill="white"
+                        />
+                      </svg>
+                    </div>
+
+                    <img src="assets/img/Rectangle 154.png" alt="" />
+
+                    <!-- heart -->
+                    <span class="heart"
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="25"
+                        height="24"
+                        viewBox="0 0 25 24"
+                        fill="white"
+                      >
+                        <path
+                          d="M13.37 20.81C13.03 20.93 12.47 20.93 12.13 20.81C9.23 19.82 2.75 15.69 2.75 8.68998C2.75 5.59998 5.24 3.09998 8.31 3.09998C10.13 3.09998 11.74 3.97998 12.75 5.33998C13.76 3.97998 15.38 3.09998 17.19 3.09998C20.26 3.09998 22.75 5.59998 22.75 8.68998C22.75 15.69 16.27 19.82 13.37 20.81Z"
+                          stroke="black"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        /></svg
+                    ></span>
+                  </div>
+
+                  <div class="z2">
+                    <p>گوشواره اسپرت</p>
+                    <p>100,000 تومان</p>
+                  </div>
+
+                  <div class="z3">
+                    <p>کد GS1</p>
+                    <div>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="17"
+                        height="16"
+                        viewBox="0 0 17 16"
+                        fill="none"
+                      >
+                        <path
+                          d="M7.77447 1.08156C7.92415 0.620902 8.57585 0.620907 8.72553 1.08156L9.90735 4.71885C10.1082 5.33688 10.6841 5.75532 11.3339 5.75532H15.1584C15.6428 5.75532 15.8442 6.37513 15.4523 6.65983L12.3582 8.9078C11.8325 9.28976 11.6125 9.96681 11.8133 10.5848L12.9952 14.2221C13.1448 14.6828 12.6176 15.0659 12.2257 14.7812L9.13168 12.5332C8.60595 12.1512 7.89405 12.1512 7.36832 12.5332L4.27426 14.7812C3.8824 15.0659 3.35516 14.6828 3.50484 14.2221L4.68667 10.5848C4.88748 9.96682 4.66749 9.28976 4.14176 8.9078L1.0477 6.65983C0.65584 6.37513 0.85723 5.75532 1.34159 5.75532H5.16606C5.8159 5.75532 6.39183 5.33688 6.59265 4.71885L7.77447 1.08156Z"
+                          stroke="#6E93C4"
+                        />
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="17"
+                        height="16"
+                        viewBox="0 0 17 16"
+                        fill="none"
+                      >
+                        <path
+                          d="M7.29894 0.927052C7.5983 0.0057416 8.9017 0.00573945 9.20106 0.92705L10.3829 4.56434C10.5168 4.97636 10.9007 5.25532 11.3339 5.25532H15.1584C16.1271 5.25532 16.5299 6.49494 15.7462 7.06434L12.6521 9.31231C12.3016 9.56695 12.155 10.0183 12.2889 10.4303L13.4707 14.0676C13.77 14.9889 12.7156 15.7551 11.9318 15.1857L8.83779 12.9377C8.4873 12.6831 8.0127 12.6831 7.66222 12.9377L4.56815 15.1857C3.78444 15.7551 2.72996 14.9889 3.02931 14.0676L4.21114 10.4303C4.34501 10.0183 4.19835 9.56695 3.84787 9.31231L0.753806 7.06434C-0.0299077 6.49494 0.372867 5.25532 1.34159 5.25532H5.16606C5.59929 5.25532 5.98324 4.97636 6.11712 4.56434L7.29894 0.927052Z"
+                          fill="#6E93C4"
+                        />
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="17"
+                        height="16"
+                        viewBox="0 0 17 16"
+                        fill="none"
+                      >
+                        <path
+                          d="M7.29894 0.927052C7.5983 0.0057416 8.9017 0.00573945 9.20106 0.92705L10.3829 4.56434C10.5168 4.97636 10.9007 5.25532 11.3339 5.25532H15.1584C16.1271 5.25532 16.5299 6.49494 15.7462 7.06434L12.6521 9.31231C12.3016 9.56695 12.155 10.0183 12.2889 10.4303L13.4707 14.0676C13.77 14.9889 12.7156 15.7551 11.9318 15.1857L8.83779 12.9377C8.4873 12.6831 8.0127 12.6831 7.66222 12.9377L4.56815 15.1857C3.78444 15.7551 2.72996 14.9889 3.02931 14.0676L4.21114 10.4303C4.34501 10.0183 4.19835 9.56695 3.84787 9.31231L0.753806 7.06434C-0.0299077 6.49494 0.372867 5.25532 1.34159 5.25532H5.16606C5.59929 5.25532 5.98324 4.97636 6.11712 4.56434L7.29894 0.927052Z"
+                          fill="#6E93C4"
+                        />
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="17"
+                        height="16"
+                        viewBox="0 0 17 16"
+                        fill="none"
+                      >
+                        <path
+                          d="M7.29894 0.927052C7.5983 0.0057416 8.9017 0.00573945 9.20106 0.92705L10.3829 4.56434C10.5168 4.97636 10.9007 5.25532 11.3339 5.25532H15.1584C16.1271 5.25532 16.5299 6.49494 15.7462 7.06434L12.6521 9.31231C12.3016 9.56695 12.155 10.0183 12.2889 10.4303L13.4707 14.0676C13.77 14.9889 12.7156 15.7551 11.9318 15.1857L8.83779 12.9377C8.4873 12.6831 8.0127 12.6831 7.66222 12.9377L4.56815 15.1857C3.78444 15.7551 2.72996 14.9889 3.02931 14.0676L4.21114 10.4303C4.34501 10.0183 4.19835 9.56695 3.84787 9.31231L0.753806 7.06434C-0.0299077 6.49494 0.372867 5.25532 1.34159 5.25532H5.16606C5.59929 5.25532 5.98324 4.97636 6.11712 4.56434L7.29894 0.927052Z"
+                          fill="#6E93C4"
+                        />
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="17"
+                        height="16"
+                        viewBox="0 0 17 16"
+                        fill="none"
+                      >
+                        <path
+                          d="M7.29894 0.927052C7.5983 0.0057416 8.9017 0.00573945 9.20106 0.92705L10.3829 4.56434C10.5168 4.97636 10.9007 5.25532 11.3339 5.25532H15.1584C16.1271 5.25532 16.5299 6.49494 15.7462 7.06434L12.6521 9.31231C12.3016 9.56695 12.155 10.0183 12.2889 10.4303L13.4707 14.0676C13.77 14.9889 12.7156 15.7551 11.9318 15.1857L8.83779 12.9377C8.4873 12.6831 8.0127 12.6831 7.66222 12.9377L4.56815 15.1857C3.78444 15.7551 2.72996 14.9889 3.02931 14.0676L4.21114 10.4303C4.34501 10.0183 4.19835 9.56695 3.84787 9.31231L0.753806 7.06434C-0.0299077 6.49494 0.372867 5.25532 1.34159 5.25532H5.16606C5.59929 5.25532 5.98324 4.97636 6.11712 4.56434L7.29894 0.927052Z"
+                          fill="#6E93C4"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+
+                  <button class="buy-btn">
+                    <img
+                      src="assets/img/shopping-bag.svg"
+                      width="24px"
+                      height="24px"
+                      alt=""
+                    />
+                    <p>خرید</p>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+      </section>
+      <section class="category-lists-design pt-5 mt-4">
+        <h6>در چه زمینه ای به دنبال طرح هستید ؟</h6>
+        <h2 class="casablanca-font">دسته بندی ها</h2>
+        <div class="container mt-4 pb-4">
+          <div class="d-flex flex-wrap gap-5 justify-content-center">
+            <div class="v1">
+              <div class="items-category-design">
+                <img src="assets/img/Rectangle 153.png" alt="" />
+                <p>دستبند</p>
+              </div>
+            </div>
+            <div class="v1">
+              <div class="items-category-design">
+                <img src="assets/img/Rectangle 153.png" alt="" />
+                <p>دستبند</p>
+              </div>
+            </div>
+            <div class="v1">
+              <div class="items-category-design">
+                <img src="assets/img/Rectangle 153.png" alt="" />
+                <p>دستبند</p>
+              </div>
+            </div>
+            <div class="v1">
+              <div class="items-category-design">
+                <img src="assets/img/Rectangle 153.png" alt="" />
+                <p>دستبند</p>
+              </div>
+            </div>
+            <div class="v1">
+              <div class="items-category-design">
+                <img src="assets/img/Rectangle 153.png" alt="" />
+                <p>دستبند</p>
+              </div>
+            </div>
+            <div class="v1">
+              <div class="items-category-design">
+                <img src="assets/img/Rectangle 153.png" alt="" />
+                <p>دستبند</p>
+              </div>
+            </div>
+            <div class="v1">
+              <div class="items-category-design">
+                <img src="assets/img/Rectangle 153.png" alt="" />
+                <p>دستبند</p>
+              </div>
+            </div>
+            <div class="v1">
+              <div class="items-category-design">
+                <img src="assets/img/Rectangle 153.png" alt="" />
+                <p>دستبند</p>
+              </div>
+            </div>
+            <div class="v1">
+              <div class="items-category-design">
+                <img src="assets/img/Rectangle 153.png" alt="" />
+                <p>دستبند</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="tablist-category-product pb-5">
+        <div class="container pt-4">
+          <div class="tabs tabs-design">
+            <span class=" align-self-center">مرتب سازی : </span>
+            <div class="tab active" data-tab="tab1">همه</div>
+            <div class="tab" data-tab="tab2">دارای تخفیف</div>
+            <div class="tab" data-tab="tab3">مردانه</div>
+            <div class="tab" data-tab="tab4">کودکانه</div>
+            <div class="tab" data-tab="tab5">زنانه</div>
+          </div>
+        </div>
+
+        <div class="container">
+          <!-- محتوای تب‌ها به همراه Swiper -->
+          <div class="tab-content active" id="tab1">
+            <div
+              class="d-flex flex-wrap justify-content-lg-between justify-content-center gap-lg-5 gap-2"
+            >
+              <div class="card-item-product">
+                <div class="z1 position-relative">
+                  <!-- hover div -->
+                  <div class="imgHover">
+                    مشاهده
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="25"
+                      height="24"
+                      viewBox="0 0 25 24"
+                      fill="none"
+                    >
+                      <path
+                        d="M16.3001 4.07998C16.3001 4.26998 16.2301 4.45998 16.0801 4.60998L9.56008 11.13C9.08008 11.61 9.08008 12.39 9.56008 12.87L16.0801 19.39C16.3701 19.68 16.3701 20.16 16.0801 20.45C15.7901 20.74 15.3101 20.74 15.0201 20.45L8.50008 13.93C7.44008 12.87 7.44008 11.14 8.50008 10.07L15.0201 3.54998C15.3101 3.25998 15.7901 3.25998 16.0801 3.54998C16.2201 3.69998 16.3001 3.88998 16.3001 4.07998Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </div>
+
+                  <img src="assets/img/Rectangle 154.png" alt="" />
+
+                  <!-- heart -->
+                  <span class="heart"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="25"
+                      height="24"
+                      viewBox="0 0 25 24"
+                      fill="white"
+                    >
+                      <path
+                        d="M13.37 20.81C13.03 20.93 12.47 20.93 12.13 20.81C9.23 19.82 2.75 15.69 2.75 8.68998C2.75 5.59998 5.24 3.09998 8.31 3.09998C10.13 3.09998 11.74 3.97998 12.75 5.33998C13.76 3.97998 15.38 3.09998 17.19 3.09998C20.26 3.09998 22.75 5.59998 22.75 8.68998C22.75 15.69 16.27 19.82 13.37 20.81Z"
+                        stroke="black"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      /></svg
+                  ></span>
+                </div>
+
+                <div class="z2">
+                  <p>گوشواره اسپرت</p>
+                  <p>100,000 تومان</p>
+                </div>
+
+                <div class="z3">
+                  <p>کد GS1</p>
+                  <div>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="17"
+                      height="16"
+                      viewBox="0 0 17 16"
+                      fill="none"
+                    >
+                      <path
+                        d="M7.77447 1.08156C7.92415 0.620902 8.57585 0.620907 8.72553 1.08156L9.90735 4.71885C10.1082 5.33688 10.6841 5.75532 11.3339 5.75532H15.1584C15.6428 5.75532 15.8442 6.37513 15.4523 6.65983L12.3582 8.9078C11.8325 9.28976 11.6125 9.96681 11.8133 10.5848L12.9952 14.2221C13.1448 14.6828 12.6176 15.0659 12.2257 14.7812L9.13168 12.5332C8.60595 12.1512 7.89405 12.1512 7.36832 12.5332L4.27426 14.7812C3.8824 15.0659 3.35516 14.6828 3.50484 14.2221L4.68667 10.5848C4.88748 9.96682 4.66749 9.28976 4.14176 8.9078L1.0477 6.65983C0.65584 6.37513 0.85723 5.75532 1.34159 5.75532H5.16606C5.8159 5.75532 6.39183 5.33688 6.59265 4.71885L7.77447 1.08156Z"
+                        stroke="#6E93C4"
+                      />
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="17"
+                      height="16"
+                      viewBox="0 0 17 16"
+                      fill="none"
+                    >
+                      <path
+                        d="M7.29894 0.927052C7.5983 0.0057416 8.9017 0.00573945 9.20106 0.92705L10.3829 4.56434C10.5168 4.97636 10.9007 5.25532 11.3339 5.25532H15.1584C16.1271 5.25532 16.5299 6.49494 15.7462 7.06434L12.6521 9.31231C12.3016 9.56695 12.155 10.0183 12.2889 10.4303L13.4707 14.0676C13.77 14.9889 12.7156 15.7551 11.9318 15.1857L8.83779 12.9377C8.4873 12.6831 8.0127 12.6831 7.66222 12.9377L4.56815 15.1857C3.78444 15.7551 2.72996 14.9889 3.02931 14.0676L4.21114 10.4303C4.34501 10.0183 4.19835 9.56695 3.84787 9.31231L0.753806 7.06434C-0.0299077 6.49494 0.372867 5.25532 1.34159 5.25532H5.16606C5.59929 5.25532 5.98324 4.97636 6.11712 4.56434L7.29894 0.927052Z"
+                        fill="#6E93C4"
+                      />
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="17"
+                      height="16"
+                      viewBox="0 0 17 16"
+                      fill="none"
+                    >
+                      <path
+                        d="M7.29894 0.927052C7.5983 0.0057416 8.9017 0.00573945 9.20106 0.92705L10.3829 4.56434C10.5168 4.97636 10.9007 5.25532 11.3339 5.25532H15.1584C16.1271 5.25532 16.5299 6.49494 15.7462 7.06434L12.6521 9.31231C12.3016 9.56695 12.155 10.0183 12.2889 10.4303L13.4707 14.0676C13.77 14.9889 12.7156 15.7551 11.9318 15.1857L8.83779 12.9377C8.4873 12.6831 8.0127 12.6831 7.66222 12.9377L4.56815 15.1857C3.78444 15.7551 2.72996 14.9889 3.02931 14.0676L4.21114 10.4303C4.34501 10.0183 4.19835 9.56695 3.84787 9.31231L0.753806 7.06434C-0.0299077 6.49494 0.372867 5.25532 1.34159 5.25532H5.16606C5.59929 5.25532 5.98324 4.97636 6.11712 4.56434L7.29894 0.927052Z"
+                        fill="#6E93C4"
+                      />
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="17"
+                      height="16"
+                      viewBox="0 0 17 16"
+                      fill="none"
+                    >
+                      <path
+                        d="M7.29894 0.927052C7.5983 0.0057416 8.9017 0.00573945 9.20106 0.92705L10.3829 4.56434C10.5168 4.97636 10.9007 5.25532 11.3339 5.25532H15.1584C16.1271 5.25532 16.5299 6.49494 15.7462 7.06434L12.6521 9.31231C12.3016 9.56695 12.155 10.0183 12.2889 10.4303L13.4707 14.0676C13.77 14.9889 12.7156 15.7551 11.9318 15.1857L8.83779 12.9377C8.4873 12.6831 8.0127 12.6831 7.66222 12.9377L4.56815 15.1857C3.78444 15.7551 2.72996 14.9889 3.02931 14.0676L4.21114 10.4303C4.34501 10.0183 4.19835 9.56695 3.84787 9.31231L0.753806 7.06434C-0.0299077 6.49494 0.372867 5.25532 1.34159 5.25532H5.16606C5.59929 5.25532 5.98324 4.97636 6.11712 4.56434L7.29894 0.927052Z"
+                        fill="#6E93C4"
+                      />
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="17"
+                      height="16"
+                      viewBox="0 0 17 16"
+                      fill="none"
+                    >
+                      <path
+                        d="M7.29894 0.927052C7.5983 0.0057416 8.9017 0.00573945 9.20106 0.92705L10.3829 4.56434C10.5168 4.97636 10.9007 5.25532 11.3339 5.25532H15.1584C16.1271 5.25532 16.5299 6.49494 15.7462 7.06434L12.6521 9.31231C12.3016 9.56695 12.155 10.0183 12.2889 10.4303L13.4707 14.0676C13.77 14.9889 12.7156 15.7551 11.9318 15.1857L8.83779 12.9377C8.4873 12.6831 8.0127 12.6831 7.66222 12.9377L4.56815 15.1857C3.78444 15.7551 2.72996 14.9889 3.02931 14.0676L4.21114 10.4303C4.34501 10.0183 4.19835 9.56695 3.84787 9.31231L0.753806 7.06434C-0.0299077 6.49494 0.372867 5.25532 1.34159 5.25532H5.16606C5.59929 5.25532 5.98324 4.97636 6.11712 4.56434L7.29894 0.927052Z"
+                        fill="#6E93C4"
+                      />
+                    </svg>
+                  </div>
+                </div>
+
+                <button class="buy-btn">
+                  <img
+                    src="assets/img/shopping-bag.svg"
+                    width="24px"
+                    height="24px"
+                    alt=""
+                  />
+                  <p>خرید</p>
+                </button>
+              </div>
+              <div class="card-item-product">
+                <div class="z1 position-relative">
+                  <!-- hover div -->
+                  <div class="imgHover">
+                    مشاهده
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="25"
+                      height="24"
+                      viewBox="0 0 25 24"
+                      fill="none"
+                    >
+                      <path
+                        d="M16.3001 4.07998C16.3001 4.26998 16.2301 4.45998 16.0801 4.60998L9.56008 11.13C9.08008 11.61 9.08008 12.39 9.56008 12.87L16.0801 19.39C16.3701 19.68 16.3701 20.16 16.0801 20.45C15.7901 20.74 15.3101 20.74 15.0201 20.45L8.50008 13.93C7.44008 12.87 7.44008 11.14 8.50008 10.07L15.0201 3.54998C15.3101 3.25998 15.7901 3.25998 16.0801 3.54998C16.2201 3.69998 16.3001 3.88998 16.3001 4.07998Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </div>
+
+                  <img src="assets/img/Rectangle 154.png" alt="" />
+
+                  <!-- heart -->
+                  <span class="heart"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="25"
+                      height="24"
+                      viewBox="0 0 25 24"
+                      fill="white"
+                    >
+                      <path
+                        d="M13.37 20.81C13.03 20.93 12.47 20.93 12.13 20.81C9.23 19.82 2.75 15.69 2.75 8.68998C2.75 5.59998 5.24 3.09998 8.31 3.09998C10.13 3.09998 11.74 3.97998 12.75 5.33998C13.76 3.97998 15.38 3.09998 17.19 3.09998C20.26 3.09998 22.75 5.59998 22.75 8.68998C22.75 15.69 16.27 19.82 13.37 20.81Z"
+                        stroke="black"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      /></svg
+                  ></span>
+                </div>
+
+                <div class="z2">
+                  <p>گوشواره اسپرت</p>
+                  <p>100,000 تومان</p>
+                </div>
+
+                <div class="z3">
+                  <p>کد GS1</p>
+                  <div>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="17"
+                      height="16"
+                      viewBox="0 0 17 16"
+                      fill="none"
+                    >
+                      <path
+                        d="M7.77447 1.08156C7.92415 0.620902 8.57585 0.620907 8.72553 1.08156L9.90735 4.71885C10.1082 5.33688 10.6841 5.75532 11.3339 5.75532H15.1584C15.6428 5.75532 15.8442 6.37513 15.4523 6.65983L12.3582 8.9078C11.8325 9.28976 11.6125 9.96681 11.8133 10.5848L12.9952 14.2221C13.1448 14.6828 12.6176 15.0659 12.2257 14.7812L9.13168 12.5332C8.60595 12.1512 7.89405 12.1512 7.36832 12.5332L4.27426 14.7812C3.8824 15.0659 3.35516 14.6828 3.50484 14.2221L4.68667 10.5848C4.88748 9.96682 4.66749 9.28976 4.14176 8.9078L1.0477 6.65983C0.65584 6.37513 0.85723 5.75532 1.34159 5.75532H5.16606C5.8159 5.75532 6.39183 5.33688 6.59265 4.71885L7.77447 1.08156Z"
+                        stroke="#6E93C4"
+                      />
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="17"
+                      height="16"
+                      viewBox="0 0 17 16"
+                      fill="none"
+                    >
+                      <path
+                        d="M7.29894 0.927052C7.5983 0.0057416 8.9017 0.00573945 9.20106 0.92705L10.3829 4.56434C10.5168 4.97636 10.9007 5.25532 11.3339 5.25532H15.1584C16.1271 5.25532 16.5299 6.49494 15.7462 7.06434L12.6521 9.31231C12.3016 9.56695 12.155 10.0183 12.2889 10.4303L13.4707 14.0676C13.77 14.9889 12.7156 15.7551 11.9318 15.1857L8.83779 12.9377C8.4873 12.6831 8.0127 12.6831 7.66222 12.9377L4.56815 15.1857C3.78444 15.7551 2.72996 14.9889 3.02931 14.0676L4.21114 10.4303C4.34501 10.0183 4.19835 9.56695 3.84787 9.31231L0.753806 7.06434C-0.0299077 6.49494 0.372867 5.25532 1.34159 5.25532H5.16606C5.59929 5.25532 5.98324 4.97636 6.11712 4.56434L7.29894 0.927052Z"
+                        fill="#6E93C4"
+                      />
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="17"
+                      height="16"
+                      viewBox="0 0 17 16"
+                      fill="none"
+                    >
+                      <path
+                        d="M7.29894 0.927052C7.5983 0.0057416 8.9017 0.00573945 9.20106 0.92705L10.3829 4.56434C10.5168 4.97636 10.9007 5.25532 11.3339 5.25532H15.1584C16.1271 5.25532 16.5299 6.49494 15.7462 7.06434L12.6521 9.31231C12.3016 9.56695 12.155 10.0183 12.2889 10.4303L13.4707 14.0676C13.77 14.9889 12.7156 15.7551 11.9318 15.1857L8.83779 12.9377C8.4873 12.6831 8.0127 12.6831 7.66222 12.9377L4.56815 15.1857C3.78444 15.7551 2.72996 14.9889 3.02931 14.0676L4.21114 10.4303C4.34501 10.0183 4.19835 9.56695 3.84787 9.31231L0.753806 7.06434C-0.0299077 6.49494 0.372867 5.25532 1.34159 5.25532H5.16606C5.59929 5.25532 5.98324 4.97636 6.11712 4.56434L7.29894 0.927052Z"
+                        fill="#6E93C4"
+                      />
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="17"
+                      height="16"
+                      viewBox="0 0 17 16"
+                      fill="none"
+                    >
+                      <path
+                        d="M7.29894 0.927052C7.5983 0.0057416 8.9017 0.00573945 9.20106 0.92705L10.3829 4.56434C10.5168 4.97636 10.9007 5.25532 11.3339 5.25532H15.1584C16.1271 5.25532 16.5299 6.49494 15.7462 7.06434L12.6521 9.31231C12.3016 9.56695 12.155 10.0183 12.2889 10.4303L13.4707 14.0676C13.77 14.9889 12.7156 15.7551 11.9318 15.1857L8.83779 12.9377C8.4873 12.6831 8.0127 12.6831 7.66222 12.9377L4.56815 15.1857C3.78444 15.7551 2.72996 14.9889 3.02931 14.0676L4.21114 10.4303C4.34501 10.0183 4.19835 9.56695 3.84787 9.31231L0.753806 7.06434C-0.0299077 6.49494 0.372867 5.25532 1.34159 5.25532H5.16606C5.59929 5.25532 5.98324 4.97636 6.11712 4.56434L7.29894 0.927052Z"
+                        fill="#6E93C4"
+                      />
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="17"
+                      height="16"
+                      viewBox="0 0 17 16"
+                      fill="none"
+                    >
+                      <path
+                        d="M7.29894 0.927052C7.5983 0.0057416 8.9017 0.00573945 9.20106 0.92705L10.3829 4.56434C10.5168 4.97636 10.9007 5.25532 11.3339 5.25532H15.1584C16.1271 5.25532 16.5299 6.49494 15.7462 7.06434L12.6521 9.31231C12.3016 9.56695 12.155 10.0183 12.2889 10.4303L13.4707 14.0676C13.77 14.9889 12.7156 15.7551 11.9318 15.1857L8.83779 12.9377C8.4873 12.6831 8.0127 12.6831 7.66222 12.9377L4.56815 15.1857C3.78444 15.7551 2.72996 14.9889 3.02931 14.0676L4.21114 10.4303C4.34501 10.0183 4.19835 9.56695 3.84787 9.31231L0.753806 7.06434C-0.0299077 6.49494 0.372867 5.25532 1.34159 5.25532H5.16606C5.59929 5.25532 5.98324 4.97636 6.11712 4.56434L7.29894 0.927052Z"
+                        fill="#6E93C4"
+                      />
+                    </svg>
+                  </div>
+                </div>
+
+                <button class="buy-btn">
+                  <img
+                    src="assets/img/shopping-bag.svg"
+                    width="24px"
+                    height="24px"
+                    alt=""
+                  />
+                  <p>خرید</p>
+                </button>
+              </div>
+              <div class="card-item-product">
+                <div class="z1 position-relative">
+                  <!-- hover div -->
+                  <div class="imgHover">
+                    مشاهده
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="25"
+                      height="24"
+                      viewBox="0 0 25 24"
+                      fill="none"
+                    >
+                      <path
+                        d="M16.3001 4.07998C16.3001 4.26998 16.2301 4.45998 16.0801 4.60998L9.56008 11.13C9.08008 11.61 9.08008 12.39 9.56008 12.87L16.0801 19.39C16.3701 19.68 16.3701 20.16 16.0801 20.45C15.7901 20.74 15.3101 20.74 15.0201 20.45L8.50008 13.93C7.44008 12.87 7.44008 11.14 8.50008 10.07L15.0201 3.54998C15.3101 3.25998 15.7901 3.25998 16.0801 3.54998C16.2201 3.69998 16.3001 3.88998 16.3001 4.07998Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </div>
+
+                  <img src="assets/img/Rectangle 154.png" alt="" />
+
+                  <!-- heart -->
+                  <span class="heart"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="25"
+                      height="24"
+                      viewBox="0 0 25 24"
+                      fill="white"
+                    >
+                      <path
+                        d="M13.37 20.81C13.03 20.93 12.47 20.93 12.13 20.81C9.23 19.82 2.75 15.69 2.75 8.68998C2.75 5.59998 5.24 3.09998 8.31 3.09998C10.13 3.09998 11.74 3.97998 12.75 5.33998C13.76 3.97998 15.38 3.09998 17.19 3.09998C20.26 3.09998 22.75 5.59998 22.75 8.68998C22.75 15.69 16.27 19.82 13.37 20.81Z"
+                        stroke="black"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      /></svg
+                  ></span>
+                </div>
+
+                <div class="z2">
+                  <p>گوشواره اسپرت</p>
+                  <p>100,000 تومان</p>
+                </div>
+
+                <div class="z3">
+                  <p>کد GS1</p>
+                  <div>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="17"
+                      height="16"
+                      viewBox="0 0 17 16"
+                      fill="none"
+                    >
+                      <path
+                        d="M7.77447 1.08156C7.92415 0.620902 8.57585 0.620907 8.72553 1.08156L9.90735 4.71885C10.1082 5.33688 10.6841 5.75532 11.3339 5.75532H15.1584C15.6428 5.75532 15.8442 6.37513 15.4523 6.65983L12.3582 8.9078C11.8325 9.28976 11.6125 9.96681 11.8133 10.5848L12.9952 14.2221C13.1448 14.6828 12.6176 15.0659 12.2257 14.7812L9.13168 12.5332C8.60595 12.1512 7.89405 12.1512 7.36832 12.5332L4.27426 14.7812C3.8824 15.0659 3.35516 14.6828 3.50484 14.2221L4.68667 10.5848C4.88748 9.96682 4.66749 9.28976 4.14176 8.9078L1.0477 6.65983C0.65584 6.37513 0.85723 5.75532 1.34159 5.75532H5.16606C5.8159 5.75532 6.39183 5.33688 6.59265 4.71885L7.77447 1.08156Z"
+                        stroke="#6E93C4"
+                      />
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="17"
+                      height="16"
+                      viewBox="0 0 17 16"
+                      fill="none"
+                    >
+                      <path
+                        d="M7.29894 0.927052C7.5983 0.0057416 8.9017 0.00573945 9.20106 0.92705L10.3829 4.56434C10.5168 4.97636 10.9007 5.25532 11.3339 5.25532H15.1584C16.1271 5.25532 16.5299 6.49494 15.7462 7.06434L12.6521 9.31231C12.3016 9.56695 12.155 10.0183 12.2889 10.4303L13.4707 14.0676C13.77 14.9889 12.7156 15.7551 11.9318 15.1857L8.83779 12.9377C8.4873 12.6831 8.0127 12.6831 7.66222 12.9377L4.56815 15.1857C3.78444 15.7551 2.72996 14.9889 3.02931 14.0676L4.21114 10.4303C4.34501 10.0183 4.19835 9.56695 3.84787 9.31231L0.753806 7.06434C-0.0299077 6.49494 0.372867 5.25532 1.34159 5.25532H5.16606C5.59929 5.25532 5.98324 4.97636 6.11712 4.56434L7.29894 0.927052Z"
+                        fill="#6E93C4"
+                      />
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="17"
+                      height="16"
+                      viewBox="0 0 17 16"
+                      fill="none"
+                    >
+                      <path
+                        d="M7.29894 0.927052C7.5983 0.0057416 8.9017 0.00573945 9.20106 0.92705L10.3829 4.56434C10.5168 4.97636 10.9007 5.25532 11.3339 5.25532H15.1584C16.1271 5.25532 16.5299 6.49494 15.7462 7.06434L12.6521 9.31231C12.3016 9.56695 12.155 10.0183 12.2889 10.4303L13.4707 14.0676C13.77 14.9889 12.7156 15.7551 11.9318 15.1857L8.83779 12.9377C8.4873 12.6831 8.0127 12.6831 7.66222 12.9377L4.56815 15.1857C3.78444 15.7551 2.72996 14.9889 3.02931 14.0676L4.21114 10.4303C4.34501 10.0183 4.19835 9.56695 3.84787 9.31231L0.753806 7.06434C-0.0299077 6.49494 0.372867 5.25532 1.34159 5.25532H5.16606C5.59929 5.25532 5.98324 4.97636 6.11712 4.56434L7.29894 0.927052Z"
+                        fill="#6E93C4"
+                      />
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="17"
+                      height="16"
+                      viewBox="0 0 17 16"
+                      fill="none"
+                    >
+                      <path
+                        d="M7.29894 0.927052C7.5983 0.0057416 8.9017 0.00573945 9.20106 0.92705L10.3829 4.56434C10.5168 4.97636 10.9007 5.25532 11.3339 5.25532H15.1584C16.1271 5.25532 16.5299 6.49494 15.7462 7.06434L12.6521 9.31231C12.3016 9.56695 12.155 10.0183 12.2889 10.4303L13.4707 14.0676C13.77 14.9889 12.7156 15.7551 11.9318 15.1857L8.83779 12.9377C8.4873 12.6831 8.0127 12.6831 7.66222 12.9377L4.56815 15.1857C3.78444 15.7551 2.72996 14.9889 3.02931 14.0676L4.21114 10.4303C4.34501 10.0183 4.19835 9.56695 3.84787 9.31231L0.753806 7.06434C-0.0299077 6.49494 0.372867 5.25532 1.34159 5.25532H5.16606C5.59929 5.25532 5.98324 4.97636 6.11712 4.56434L7.29894 0.927052Z"
+                        fill="#6E93C4"
+                      />
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="17"
+                      height="16"
+                      viewBox="0 0 17 16"
+                      fill="none"
+                    >
+                      <path
+                        d="M7.29894 0.927052C7.5983 0.0057416 8.9017 0.00573945 9.20106 0.92705L10.3829 4.56434C10.5168 4.97636 10.9007 5.25532 11.3339 5.25532H15.1584C16.1271 5.25532 16.5299 6.49494 15.7462 7.06434L12.6521 9.31231C12.3016 9.56695 12.155 10.0183 12.2889 10.4303L13.4707 14.0676C13.77 14.9889 12.7156 15.7551 11.9318 15.1857L8.83779 12.9377C8.4873 12.6831 8.0127 12.6831 7.66222 12.9377L4.56815 15.1857C3.78444 15.7551 2.72996 14.9889 3.02931 14.0676L4.21114 10.4303C4.34501 10.0183 4.19835 9.56695 3.84787 9.31231L0.753806 7.06434C-0.0299077 6.49494 0.372867 5.25532 1.34159 5.25532H5.16606C5.59929 5.25532 5.98324 4.97636 6.11712 4.56434L7.29894 0.927052Z"
+                        fill="#6E93C4"
+                      />
+                    </svg>
+                  </div>
+                </div>
+
+                <button class="buy-btn">
+                  <img
+                    src="assets/img/shopping-bag.svg"
+                    width="24px"
+                    height="24px"
+                    alt=""
+                  />
+                  <p>خرید</p>
+                </button>
+              </div>
+              <div class="card-item-product">
+                <div class="z1 position-relative">
+                  <!-- hover div -->
+                  <div class="imgHover">
+                    مشاهده
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="25"
+                      height="24"
+                      viewBox="0 0 25 24"
+                      fill="none"
+                    >
+                      <path
+                        d="M16.3001 4.07998C16.3001 4.26998 16.2301 4.45998 16.0801 4.60998L9.56008 11.13C9.08008 11.61 9.08008 12.39 9.56008 12.87L16.0801 19.39C16.3701 19.68 16.3701 20.16 16.0801 20.45C15.7901 20.74 15.3101 20.74 15.0201 20.45L8.50008 13.93C7.44008 12.87 7.44008 11.14 8.50008 10.07L15.0201 3.54998C15.3101 3.25998 15.7901 3.25998 16.0801 3.54998C16.2201 3.69998 16.3001 3.88998 16.3001 4.07998Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </div>
+
+                  <img src="assets/img/Rectangle 154.png" alt="" />
+
+                  <!-- heart -->
+                  <span class="heart"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="25"
+                      height="24"
+                      viewBox="0 0 25 24"
+                      fill="white"
+                    >
+                      <path
+                        d="M13.37 20.81C13.03 20.93 12.47 20.93 12.13 20.81C9.23 19.82 2.75 15.69 2.75 8.68998C2.75 5.59998 5.24 3.09998 8.31 3.09998C10.13 3.09998 11.74 3.97998 12.75 5.33998C13.76 3.97998 15.38 3.09998 17.19 3.09998C20.26 3.09998 22.75 5.59998 22.75 8.68998C22.75 15.69 16.27 19.82 13.37 20.81Z"
+                        stroke="black"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      /></svg
+                  ></span>
+                </div>
+
+                <div class="z2">
+                  <p>گوشواره اسپرت</p>
+                  <p>100,000 تومان</p>
+                </div>
+
+                <div class="z3">
+                  <p>کد GS1</p>
+                  <div>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="17"
+                      height="16"
+                      viewBox="0 0 17 16"
+                      fill="none"
+                    >
+                      <path
+                        d="M7.77447 1.08156C7.92415 0.620902 8.57585 0.620907 8.72553 1.08156L9.90735 4.71885C10.1082 5.33688 10.6841 5.75532 11.3339 5.75532H15.1584C15.6428 5.75532 15.8442 6.37513 15.4523 6.65983L12.3582 8.9078C11.8325 9.28976 11.6125 9.96681 11.8133 10.5848L12.9952 14.2221C13.1448 14.6828 12.6176 15.0659 12.2257 14.7812L9.13168 12.5332C8.60595 12.1512 7.89405 12.1512 7.36832 12.5332L4.27426 14.7812C3.8824 15.0659 3.35516 14.6828 3.50484 14.2221L4.68667 10.5848C4.88748 9.96682 4.66749 9.28976 4.14176 8.9078L1.0477 6.65983C0.65584 6.37513 0.85723 5.75532 1.34159 5.75532H5.16606C5.8159 5.75532 6.39183 5.33688 6.59265 4.71885L7.77447 1.08156Z"
+                        stroke="#6E93C4"
+                      />
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="17"
+                      height="16"
+                      viewBox="0 0 17 16"
+                      fill="none"
+                    >
+                      <path
+                        d="M7.29894 0.927052C7.5983 0.0057416 8.9017 0.00573945 9.20106 0.92705L10.3829 4.56434C10.5168 4.97636 10.9007 5.25532 11.3339 5.25532H15.1584C16.1271 5.25532 16.5299 6.49494 15.7462 7.06434L12.6521 9.31231C12.3016 9.56695 12.155 10.0183 12.2889 10.4303L13.4707 14.0676C13.77 14.9889 12.7156 15.7551 11.9318 15.1857L8.83779 12.9377C8.4873 12.6831 8.0127 12.6831 7.66222 12.9377L4.56815 15.1857C3.78444 15.7551 2.72996 14.9889 3.02931 14.0676L4.21114 10.4303C4.34501 10.0183 4.19835 9.56695 3.84787 9.31231L0.753806 7.06434C-0.0299077 6.49494 0.372867 5.25532 1.34159 5.25532H5.16606C5.59929 5.25532 5.98324 4.97636 6.11712 4.56434L7.29894 0.927052Z"
+                        fill="#6E93C4"
+                      />
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="17"
+                      height="16"
+                      viewBox="0 0 17 16"
+                      fill="none"
+                    >
+                      <path
+                        d="M7.29894 0.927052C7.5983 0.0057416 8.9017 0.00573945 9.20106 0.92705L10.3829 4.56434C10.5168 4.97636 10.9007 5.25532 11.3339 5.25532H15.1584C16.1271 5.25532 16.5299 6.49494 15.7462 7.06434L12.6521 9.31231C12.3016 9.56695 12.155 10.0183 12.2889 10.4303L13.4707 14.0676C13.77 14.9889 12.7156 15.7551 11.9318 15.1857L8.83779 12.9377C8.4873 12.6831 8.0127 12.6831 7.66222 12.9377L4.56815 15.1857C3.78444 15.7551 2.72996 14.9889 3.02931 14.0676L4.21114 10.4303C4.34501 10.0183 4.19835 9.56695 3.84787 9.31231L0.753806 7.06434C-0.0299077 6.49494 0.372867 5.25532 1.34159 5.25532H5.16606C5.59929 5.25532 5.98324 4.97636 6.11712 4.56434L7.29894 0.927052Z"
+                        fill="#6E93C4"
+                      />
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="17"
+                      height="16"
+                      viewBox="0 0 17 16"
+                      fill="none"
+                    >
+                      <path
+                        d="M7.29894 0.927052C7.5983 0.0057416 8.9017 0.00573945 9.20106 0.92705L10.3829 4.56434C10.5168 4.97636 10.9007 5.25532 11.3339 5.25532H15.1584C16.1271 5.25532 16.5299 6.49494 15.7462 7.06434L12.6521 9.31231C12.3016 9.56695 12.155 10.0183 12.2889 10.4303L13.4707 14.0676C13.77 14.9889 12.7156 15.7551 11.9318 15.1857L8.83779 12.9377C8.4873 12.6831 8.0127 12.6831 7.66222 12.9377L4.56815 15.1857C3.78444 15.7551 2.72996 14.9889 3.02931 14.0676L4.21114 10.4303C4.34501 10.0183 4.19835 9.56695 3.84787 9.31231L0.753806 7.06434C-0.0299077 6.49494 0.372867 5.25532 1.34159 5.25532H5.16606C5.59929 5.25532 5.98324 4.97636 6.11712 4.56434L7.29894 0.927052Z"
+                        fill="#6E93C4"
+                      />
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="17"
+                      height="16"
+                      viewBox="0 0 17 16"
+                      fill="none"
+                    >
+                      <path
+                        d="M7.29894 0.927052C7.5983 0.0057416 8.9017 0.00573945 9.20106 0.92705L10.3829 4.56434C10.5168 4.97636 10.9007 5.25532 11.3339 5.25532H15.1584C16.1271 5.25532 16.5299 6.49494 15.7462 7.06434L12.6521 9.31231C12.3016 9.56695 12.155 10.0183 12.2889 10.4303L13.4707 14.0676C13.77 14.9889 12.7156 15.7551 11.9318 15.1857L8.83779 12.9377C8.4873 12.6831 8.0127 12.6831 7.66222 12.9377L4.56815 15.1857C3.78444 15.7551 2.72996 14.9889 3.02931 14.0676L4.21114 10.4303C4.34501 10.0183 4.19835 9.56695 3.84787 9.31231L0.753806 7.06434C-0.0299077 6.49494 0.372867 5.25532 1.34159 5.25532H5.16606C5.59929 5.25532 5.98324 4.97636 6.11712 4.56434L7.29894 0.927052Z"
+                        fill="#6E93C4"
+                      />
+                    </svg>
+                  </div>
+                </div>
+
+                <button class="buy-btn">
+                  <img
+                    src="assets/img/shopping-bag.svg"
+                    width="24px"
+                    height="24px"
+                    alt=""
+                  />
+                  <p>خرید</p>
+                </button>
+              </div>
+              <div class="card-item-product">
+                <div class="z1 position-relative">
+                  <!-- hover div -->
+                  <div class="imgHover">
+                    مشاهده
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="25"
+                      height="24"
+                      viewBox="0 0 25 24"
+                      fill="none"
+                    >
+                      <path
+                        d="M16.3001 4.07998C16.3001 4.26998 16.2301 4.45998 16.0801 4.60998L9.56008 11.13C9.08008 11.61 9.08008 12.39 9.56008 12.87L16.0801 19.39C16.3701 19.68 16.3701 20.16 16.0801 20.45C15.7901 20.74 15.3101 20.74 15.0201 20.45L8.50008 13.93C7.44008 12.87 7.44008 11.14 8.50008 10.07L15.0201 3.54998C15.3101 3.25998 15.7901 3.25998 16.0801 3.54998C16.2201 3.69998 16.3001 3.88998 16.3001 4.07998Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </div>
+
+                  <img src="assets/img/Rectangle 154.png" alt="" />
+
+                  <!-- heart -->
+                  <span class="heart"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="25"
+                      height="24"
+                      viewBox="0 0 25 24"
+                      fill="white"
+                    >
+                      <path
+                        d="M13.37 20.81C13.03 20.93 12.47 20.93 12.13 20.81C9.23 19.82 2.75 15.69 2.75 8.68998C2.75 5.59998 5.24 3.09998 8.31 3.09998C10.13 3.09998 11.74 3.97998 12.75 5.33998C13.76 3.97998 15.38 3.09998 17.19 3.09998C20.26 3.09998 22.75 5.59998 22.75 8.68998C22.75 15.69 16.27 19.82 13.37 20.81Z"
+                        stroke="black"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      /></svg
+                  ></span>
+                </div>
+
+                <div class="z2">
+                  <p>گوشواره اسپرت</p>
+                  <p>100,000 تومان</p>
+                </div>
+
+                <div class="z3">
+                  <p>کد GS1</p>
+                  <div>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="17"
+                      height="16"
+                      viewBox="0 0 17 16"
+                      fill="none"
+                    >
+                      <path
+                        d="M7.77447 1.08156C7.92415 0.620902 8.57585 0.620907 8.72553 1.08156L9.90735 4.71885C10.1082 5.33688 10.6841 5.75532 11.3339 5.75532H15.1584C15.6428 5.75532 15.8442 6.37513 15.4523 6.65983L12.3582 8.9078C11.8325 9.28976 11.6125 9.96681 11.8133 10.5848L12.9952 14.2221C13.1448 14.6828 12.6176 15.0659 12.2257 14.7812L9.13168 12.5332C8.60595 12.1512 7.89405 12.1512 7.36832 12.5332L4.27426 14.7812C3.8824 15.0659 3.35516 14.6828 3.50484 14.2221L4.68667 10.5848C4.88748 9.96682 4.66749 9.28976 4.14176 8.9078L1.0477 6.65983C0.65584 6.37513 0.85723 5.75532 1.34159 5.75532H5.16606C5.8159 5.75532 6.39183 5.33688 6.59265 4.71885L7.77447 1.08156Z"
+                        stroke="#6E93C4"
+                      />
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="17"
+                      height="16"
+                      viewBox="0 0 17 16"
+                      fill="none"
+                    >
+                      <path
+                        d="M7.29894 0.927052C7.5983 0.0057416 8.9017 0.00573945 9.20106 0.92705L10.3829 4.56434C10.5168 4.97636 10.9007 5.25532 11.3339 5.25532H15.1584C16.1271 5.25532 16.5299 6.49494 15.7462 7.06434L12.6521 9.31231C12.3016 9.56695 12.155 10.0183 12.2889 10.4303L13.4707 14.0676C13.77 14.9889 12.7156 15.7551 11.9318 15.1857L8.83779 12.9377C8.4873 12.6831 8.0127 12.6831 7.66222 12.9377L4.56815 15.1857C3.78444 15.7551 2.72996 14.9889 3.02931 14.0676L4.21114 10.4303C4.34501 10.0183 4.19835 9.56695 3.84787 9.31231L0.753806 7.06434C-0.0299077 6.49494 0.372867 5.25532 1.34159 5.25532H5.16606C5.59929 5.25532 5.98324 4.97636 6.11712 4.56434L7.29894 0.927052Z"
+                        fill="#6E93C4"
+                      />
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="17"
+                      height="16"
+                      viewBox="0 0 17 16"
+                      fill="none"
+                    >
+                      <path
+                        d="M7.29894 0.927052C7.5983 0.0057416 8.9017 0.00573945 9.20106 0.92705L10.3829 4.56434C10.5168 4.97636 10.9007 5.25532 11.3339 5.25532H15.1584C16.1271 5.25532 16.5299 6.49494 15.7462 7.06434L12.6521 9.31231C12.3016 9.56695 12.155 10.0183 12.2889 10.4303L13.4707 14.0676C13.77 14.9889 12.7156 15.7551 11.9318 15.1857L8.83779 12.9377C8.4873 12.6831 8.0127 12.6831 7.66222 12.9377L4.56815 15.1857C3.78444 15.7551 2.72996 14.9889 3.02931 14.0676L4.21114 10.4303C4.34501 10.0183 4.19835 9.56695 3.84787 9.31231L0.753806 7.06434C-0.0299077 6.49494 0.372867 5.25532 1.34159 5.25532H5.16606C5.59929 5.25532 5.98324 4.97636 6.11712 4.56434L7.29894 0.927052Z"
+                        fill="#6E93C4"
+                      />
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="17"
+                      height="16"
+                      viewBox="0 0 17 16"
+                      fill="none"
+                    >
+                      <path
+                        d="M7.29894 0.927052C7.5983 0.0057416 8.9017 0.00573945 9.20106 0.92705L10.3829 4.56434C10.5168 4.97636 10.9007 5.25532 11.3339 5.25532H15.1584C16.1271 5.25532 16.5299 6.49494 15.7462 7.06434L12.6521 9.31231C12.3016 9.56695 12.155 10.0183 12.2889 10.4303L13.4707 14.0676C13.77 14.9889 12.7156 15.7551 11.9318 15.1857L8.83779 12.9377C8.4873 12.6831 8.0127 12.6831 7.66222 12.9377L4.56815 15.1857C3.78444 15.7551 2.72996 14.9889 3.02931 14.0676L4.21114 10.4303C4.34501 10.0183 4.19835 9.56695 3.84787 9.31231L0.753806 7.06434C-0.0299077 6.49494 0.372867 5.25532 1.34159 5.25532H5.16606C5.59929 5.25532 5.98324 4.97636 6.11712 4.56434L7.29894 0.927052Z"
+                        fill="#6E93C4"
+                      />
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="17"
+                      height="16"
+                      viewBox="0 0 17 16"
+                      fill="none"
+                    >
+                      <path
+                        d="M7.29894 0.927052C7.5983 0.0057416 8.9017 0.00573945 9.20106 0.92705L10.3829 4.56434C10.5168 4.97636 10.9007 5.25532 11.3339 5.25532H15.1584C16.1271 5.25532 16.5299 6.49494 15.7462 7.06434L12.6521 9.31231C12.3016 9.56695 12.155 10.0183 12.2889 10.4303L13.4707 14.0676C13.77 14.9889 12.7156 15.7551 11.9318 15.1857L8.83779 12.9377C8.4873 12.6831 8.0127 12.6831 7.66222 12.9377L4.56815 15.1857C3.78444 15.7551 2.72996 14.9889 3.02931 14.0676L4.21114 10.4303C4.34501 10.0183 4.19835 9.56695 3.84787 9.31231L0.753806 7.06434C-0.0299077 6.49494 0.372867 5.25532 1.34159 5.25532H5.16606C5.59929 5.25532 5.98324 4.97636 6.11712 4.56434L7.29894 0.927052Z"
+                        fill="#6E93C4"
+                      />
+                    </svg>
+                  </div>
+                </div>
+
+                <button class="buy-btn">
+                  <img
+                    src="assets/img/shopping-bag.svg"
+                    width="24px"
+                    height="24px"
+                    alt=""
+                  />
+                  <p>خرید</p>
+                </button>
+              </div>
+              <div class="card-item-product">
+                <div class="z1 position-relative">
+                  <!-- hover div -->
+                  <div class="imgHover">
+                    مشاهده
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="25"
+                      height="24"
+                      viewBox="0 0 25 24"
+                      fill="none"
+                    >
+                      <path
+                        d="M16.3001 4.07998C16.3001 4.26998 16.2301 4.45998 16.0801 4.60998L9.56008 11.13C9.08008 11.61 9.08008 12.39 9.56008 12.87L16.0801 19.39C16.3701 19.68 16.3701 20.16 16.0801 20.45C15.7901 20.74 15.3101 20.74 15.0201 20.45L8.50008 13.93C7.44008 12.87 7.44008 11.14 8.50008 10.07L15.0201 3.54998C15.3101 3.25998 15.7901 3.25998 16.0801 3.54998C16.2201 3.69998 16.3001 3.88998 16.3001 4.07998Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </div>
+
+                  <img src="assets/img/Rectangle 154.png" alt="" />
+
+                  <!-- heart -->
+                  <span class="heart"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="25"
+                      height="24"
+                      viewBox="0 0 25 24"
+                      fill="white"
+                    >
+                      <path
+                        d="M13.37 20.81C13.03 20.93 12.47 20.93 12.13 20.81C9.23 19.82 2.75 15.69 2.75 8.68998C2.75 5.59998 5.24 3.09998 8.31 3.09998C10.13 3.09998 11.74 3.97998 12.75 5.33998C13.76 3.97998 15.38 3.09998 17.19 3.09998C20.26 3.09998 22.75 5.59998 22.75 8.68998C22.75 15.69 16.27 19.82 13.37 20.81Z"
+                        stroke="black"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      /></svg
+                  ></span>
+                </div>
+
+                <div class="z2">
+                  <p>گوشواره اسپرت</p>
+                  <p>100,000 تومان</p>
+                </div>
+
+                <div class="z3">
+                  <p>کد GS1</p>
+                  <div>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="17"
+                      height="16"
+                      viewBox="0 0 17 16"
+                      fill="none"
+                    >
+                      <path
+                        d="M7.77447 1.08156C7.92415 0.620902 8.57585 0.620907 8.72553 1.08156L9.90735 4.71885C10.1082 5.33688 10.6841 5.75532 11.3339 5.75532H15.1584C15.6428 5.75532 15.8442 6.37513 15.4523 6.65983L12.3582 8.9078C11.8325 9.28976 11.6125 9.96681 11.8133 10.5848L12.9952 14.2221C13.1448 14.6828 12.6176 15.0659 12.2257 14.7812L9.13168 12.5332C8.60595 12.1512 7.89405 12.1512 7.36832 12.5332L4.27426 14.7812C3.8824 15.0659 3.35516 14.6828 3.50484 14.2221L4.68667 10.5848C4.88748 9.96682 4.66749 9.28976 4.14176 8.9078L1.0477 6.65983C0.65584 6.37513 0.85723 5.75532 1.34159 5.75532H5.16606C5.8159 5.75532 6.39183 5.33688 6.59265 4.71885L7.77447 1.08156Z"
+                        stroke="#6E93C4"
+                      />
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="17"
+                      height="16"
+                      viewBox="0 0 17 16"
+                      fill="none"
+                    >
+                      <path
+                        d="M7.29894 0.927052C7.5983 0.0057416 8.9017 0.00573945 9.20106 0.92705L10.3829 4.56434C10.5168 4.97636 10.9007 5.25532 11.3339 5.25532H15.1584C16.1271 5.25532 16.5299 6.49494 15.7462 7.06434L12.6521 9.31231C12.3016 9.56695 12.155 10.0183 12.2889 10.4303L13.4707 14.0676C13.77 14.9889 12.7156 15.7551 11.9318 15.1857L8.83779 12.9377C8.4873 12.6831 8.0127 12.6831 7.66222 12.9377L4.56815 15.1857C3.78444 15.7551 2.72996 14.9889 3.02931 14.0676L4.21114 10.4303C4.34501 10.0183 4.19835 9.56695 3.84787 9.31231L0.753806 7.06434C-0.0299077 6.49494 0.372867 5.25532 1.34159 5.25532H5.16606C5.59929 5.25532 5.98324 4.97636 6.11712 4.56434L7.29894 0.927052Z"
+                        fill="#6E93C4"
+                      />
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="17"
+                      height="16"
+                      viewBox="0 0 17 16"
+                      fill="none"
+                    >
+                      <path
+                        d="M7.29894 0.927052C7.5983 0.0057416 8.9017 0.00573945 9.20106 0.92705L10.3829 4.56434C10.5168 4.97636 10.9007 5.25532 11.3339 5.25532H15.1584C16.1271 5.25532 16.5299 6.49494 15.7462 7.06434L12.6521 9.31231C12.3016 9.56695 12.155 10.0183 12.2889 10.4303L13.4707 14.0676C13.77 14.9889 12.7156 15.7551 11.9318 15.1857L8.83779 12.9377C8.4873 12.6831 8.0127 12.6831 7.66222 12.9377L4.56815 15.1857C3.78444 15.7551 2.72996 14.9889 3.02931 14.0676L4.21114 10.4303C4.34501 10.0183 4.19835 9.56695 3.84787 9.31231L0.753806 7.06434C-0.0299077 6.49494 0.372867 5.25532 1.34159 5.25532H5.16606C5.59929 5.25532 5.98324 4.97636 6.11712 4.56434L7.29894 0.927052Z"
+                        fill="#6E93C4"
+                      />
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="17"
+                      height="16"
+                      viewBox="0 0 17 16"
+                      fill="none"
+                    >
+                      <path
+                        d="M7.29894 0.927052C7.5983 0.0057416 8.9017 0.00573945 9.20106 0.92705L10.3829 4.56434C10.5168 4.97636 10.9007 5.25532 11.3339 5.25532H15.1584C16.1271 5.25532 16.5299 6.49494 15.7462 7.06434L12.6521 9.31231C12.3016 9.56695 12.155 10.0183 12.2889 10.4303L13.4707 14.0676C13.77 14.9889 12.7156 15.7551 11.9318 15.1857L8.83779 12.9377C8.4873 12.6831 8.0127 12.6831 7.66222 12.9377L4.56815 15.1857C3.78444 15.7551 2.72996 14.9889 3.02931 14.0676L4.21114 10.4303C4.34501 10.0183 4.19835 9.56695 3.84787 9.31231L0.753806 7.06434C-0.0299077 6.49494 0.372867 5.25532 1.34159 5.25532H5.16606C5.59929 5.25532 5.98324 4.97636 6.11712 4.56434L7.29894 0.927052Z"
+                        fill="#6E93C4"
+                      />
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="17"
+                      height="16"
+                      viewBox="0 0 17 16"
+                      fill="none"
+                    >
+                      <path
+                        d="M7.29894 0.927052C7.5983 0.0057416 8.9017 0.00573945 9.20106 0.92705L10.3829 4.56434C10.5168 4.97636 10.9007 5.25532 11.3339 5.25532H15.1584C16.1271 5.25532 16.5299 6.49494 15.7462 7.06434L12.6521 9.31231C12.3016 9.56695 12.155 10.0183 12.2889 10.4303L13.4707 14.0676C13.77 14.9889 12.7156 15.7551 11.9318 15.1857L8.83779 12.9377C8.4873 12.6831 8.0127 12.6831 7.66222 12.9377L4.56815 15.1857C3.78444 15.7551 2.72996 14.9889 3.02931 14.0676L4.21114 10.4303C4.34501 10.0183 4.19835 9.56695 3.84787 9.31231L0.753806 7.06434C-0.0299077 6.49494 0.372867 5.25532 1.34159 5.25532H5.16606C5.59929 5.25532 5.98324 4.97636 6.11712 4.56434L7.29894 0.927052Z"
+                        fill="#6E93C4"
+                      />
+                    </svg>
+                  </div>
+                </div>
+
+                <button class="buy-btn">
+                  <img
+                    src="assets/img/shopping-bag.svg"
+                    width="24px"
+                    height="24px"
+                    alt=""
+                  />
+                  <p>خرید</p>
+                </button>
+              </div>
+              <div class="card-item-product">
+                <div class="z1 position-relative">
+                  <!-- hover div -->
+                  <div class="imgHover">
+                    مشاهده
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="25"
+                      height="24"
+                      viewBox="0 0 25 24"
+                      fill="none"
+                    >
+                      <path
+                        d="M16.3001 4.07998C16.3001 4.26998 16.2301 4.45998 16.0801 4.60998L9.56008 11.13C9.08008 11.61 9.08008 12.39 9.56008 12.87L16.0801 19.39C16.3701 19.68 16.3701 20.16 16.0801 20.45C15.7901 20.74 15.3101 20.74 15.0201 20.45L8.50008 13.93C7.44008 12.87 7.44008 11.14 8.50008 10.07L15.0201 3.54998C15.3101 3.25998 15.7901 3.25998 16.0801 3.54998C16.2201 3.69998 16.3001 3.88998 16.3001 4.07998Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </div>
+
+                  <img src="assets/img/Rectangle 154.png" alt="" />
+
+                  <!-- heart -->
+                  <span class="heart"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="25"
+                      height="24"
+                      viewBox="0 0 25 24"
+                      fill="white"
+                    >
+                      <path
+                        d="M13.37 20.81C13.03 20.93 12.47 20.93 12.13 20.81C9.23 19.82 2.75 15.69 2.75 8.68998C2.75 5.59998 5.24 3.09998 8.31 3.09998C10.13 3.09998 11.74 3.97998 12.75 5.33998C13.76 3.97998 15.38 3.09998 17.19 3.09998C20.26 3.09998 22.75 5.59998 22.75 8.68998C22.75 15.69 16.27 19.82 13.37 20.81Z"
+                        stroke="black"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      /></svg
+                  ></span>
+                </div>
+
+                <div class="z2">
+                  <p>گوشواره اسپرت</p>
+                  <p>100,000 تومان</p>
+                </div>
+
+                <div class="z3">
+                  <p>کد GS1</p>
+                  <div>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="17"
+                      height="16"
+                      viewBox="0 0 17 16"
+                      fill="none"
+                    >
+                      <path
+                        d="M7.77447 1.08156C7.92415 0.620902 8.57585 0.620907 8.72553 1.08156L9.90735 4.71885C10.1082 5.33688 10.6841 5.75532 11.3339 5.75532H15.1584C15.6428 5.75532 15.8442 6.37513 15.4523 6.65983L12.3582 8.9078C11.8325 9.28976 11.6125 9.96681 11.8133 10.5848L12.9952 14.2221C13.1448 14.6828 12.6176 15.0659 12.2257 14.7812L9.13168 12.5332C8.60595 12.1512 7.89405 12.1512 7.36832 12.5332L4.27426 14.7812C3.8824 15.0659 3.35516 14.6828 3.50484 14.2221L4.68667 10.5848C4.88748 9.96682 4.66749 9.28976 4.14176 8.9078L1.0477 6.65983C0.65584 6.37513 0.85723 5.75532 1.34159 5.75532H5.16606C5.8159 5.75532 6.39183 5.33688 6.59265 4.71885L7.77447 1.08156Z"
+                        stroke="#6E93C4"
+                      />
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="17"
+                      height="16"
+                      viewBox="0 0 17 16"
+                      fill="none"
+                    >
+                      <path
+                        d="M7.29894 0.927052C7.5983 0.0057416 8.9017 0.00573945 9.20106 0.92705L10.3829 4.56434C10.5168 4.97636 10.9007 5.25532 11.3339 5.25532H15.1584C16.1271 5.25532 16.5299 6.49494 15.7462 7.06434L12.6521 9.31231C12.3016 9.56695 12.155 10.0183 12.2889 10.4303L13.4707 14.0676C13.77 14.9889 12.7156 15.7551 11.9318 15.1857L8.83779 12.9377C8.4873 12.6831 8.0127 12.6831 7.66222 12.9377L4.56815 15.1857C3.78444 15.7551 2.72996 14.9889 3.02931 14.0676L4.21114 10.4303C4.34501 10.0183 4.19835 9.56695 3.84787 9.31231L0.753806 7.06434C-0.0299077 6.49494 0.372867 5.25532 1.34159 5.25532H5.16606C5.59929 5.25532 5.98324 4.97636 6.11712 4.56434L7.29894 0.927052Z"
+                        fill="#6E93C4"
+                      />
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="17"
+                      height="16"
+                      viewBox="0 0 17 16"
+                      fill="none"
+                    >
+                      <path
+                        d="M7.29894 0.927052C7.5983 0.0057416 8.9017 0.00573945 9.20106 0.92705L10.3829 4.56434C10.5168 4.97636 10.9007 5.25532 11.3339 5.25532H15.1584C16.1271 5.25532 16.5299 6.49494 15.7462 7.06434L12.6521 9.31231C12.3016 9.56695 12.155 10.0183 12.2889 10.4303L13.4707 14.0676C13.77 14.9889 12.7156 15.7551 11.9318 15.1857L8.83779 12.9377C8.4873 12.6831 8.0127 12.6831 7.66222 12.9377L4.56815 15.1857C3.78444 15.7551 2.72996 14.9889 3.02931 14.0676L4.21114 10.4303C4.34501 10.0183 4.19835 9.56695 3.84787 9.31231L0.753806 7.06434C-0.0299077 6.49494 0.372867 5.25532 1.34159 5.25532H5.16606C5.59929 5.25532 5.98324 4.97636 6.11712 4.56434L7.29894 0.927052Z"
+                        fill="#6E93C4"
+                      />
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="17"
+                      height="16"
+                      viewBox="0 0 17 16"
+                      fill="none"
+                    >
+                      <path
+                        d="M7.29894 0.927052C7.5983 0.0057416 8.9017 0.00573945 9.20106 0.92705L10.3829 4.56434C10.5168 4.97636 10.9007 5.25532 11.3339 5.25532H15.1584C16.1271 5.25532 16.5299 6.49494 15.7462 7.06434L12.6521 9.31231C12.3016 9.56695 12.155 10.0183 12.2889 10.4303L13.4707 14.0676C13.77 14.9889 12.7156 15.7551 11.9318 15.1857L8.83779 12.9377C8.4873 12.6831 8.0127 12.6831 7.66222 12.9377L4.56815 15.1857C3.78444 15.7551 2.72996 14.9889 3.02931 14.0676L4.21114 10.4303C4.34501 10.0183 4.19835 9.56695 3.84787 9.31231L0.753806 7.06434C-0.0299077 6.49494 0.372867 5.25532 1.34159 5.25532H5.16606C5.59929 5.25532 5.98324 4.97636 6.11712 4.56434L7.29894 0.927052Z"
+                        fill="#6E93C4"
+                      />
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="17"
+                      height="16"
+                      viewBox="0 0 17 16"
+                      fill="none"
+                    >
+                      <path
+                        d="M7.29894 0.927052C7.5983 0.0057416 8.9017 0.00573945 9.20106 0.92705L10.3829 4.56434C10.5168 4.97636 10.9007 5.25532 11.3339 5.25532H15.1584C16.1271 5.25532 16.5299 6.49494 15.7462 7.06434L12.6521 9.31231C12.3016 9.56695 12.155 10.0183 12.2889 10.4303L13.4707 14.0676C13.77 14.9889 12.7156 15.7551 11.9318 15.1857L8.83779 12.9377C8.4873 12.6831 8.0127 12.6831 7.66222 12.9377L4.56815 15.1857C3.78444 15.7551 2.72996 14.9889 3.02931 14.0676L4.21114 10.4303C4.34501 10.0183 4.19835 9.56695 3.84787 9.31231L0.753806 7.06434C-0.0299077 6.49494 0.372867 5.25532 1.34159 5.25532H5.16606C5.59929 5.25532 5.98324 4.97636 6.11712 4.56434L7.29894 0.927052Z"
+                        fill="#6E93C4"
+                      />
+                    </svg>
+                  </div>
+                </div>
+
+                <button class="buy-btn">
+                  <img
+                    src="assets/img/shopping-bag.svg"
+                    width="24px"
+                    height="24px"
+                    alt=""
+                  />
+                  <p>خرید</p>
+                </button>
+              </div>
+              <div class="card-item-product">
+                <div class="z1 position-relative">
+                  <!-- hover div -->
+                  <div class="imgHover">
+                    مشاهده
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="25"
+                      height="24"
+                      viewBox="0 0 25 24"
+                      fill="none"
+                    >
+                      <path
+                        d="M16.3001 4.07998C16.3001 4.26998 16.2301 4.45998 16.0801 4.60998L9.56008 11.13C9.08008 11.61 9.08008 12.39 9.56008 12.87L16.0801 19.39C16.3701 19.68 16.3701 20.16 16.0801 20.45C15.7901 20.74 15.3101 20.74 15.0201 20.45L8.50008 13.93C7.44008 12.87 7.44008 11.14 8.50008 10.07L15.0201 3.54998C15.3101 3.25998 15.7901 3.25998 16.0801 3.54998C16.2201 3.69998 16.3001 3.88998 16.3001 4.07998Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </div>
+
+                  <img src="assets/img/Rectangle 154.png" alt="" />
+
+                  <!-- heart -->
+                  <span class="heart"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="25"
+                      height="24"
+                      viewBox="0 0 25 24"
+                      fill="white"
+                    >
+                      <path
+                        d="M13.37 20.81C13.03 20.93 12.47 20.93 12.13 20.81C9.23 19.82 2.75 15.69 2.75 8.68998C2.75 5.59998 5.24 3.09998 8.31 3.09998C10.13 3.09998 11.74 3.97998 12.75 5.33998C13.76 3.97998 15.38 3.09998 17.19 3.09998C20.26 3.09998 22.75 5.59998 22.75 8.68998C22.75 15.69 16.27 19.82 13.37 20.81Z"
+                        stroke="black"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      /></svg
+                  ></span>
+                </div>
+
+                <div class="z2">
+                  <p>گوشواره اسپرت</p>
+                  <p>100,000 تومان</p>
+                </div>
+
+                <div class="z3">
+                  <p>کد GS1</p>
+                  <div>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="17"
+                      height="16"
+                      viewBox="0 0 17 16"
+                      fill="none"
+                    >
+                      <path
+                        d="M7.77447 1.08156C7.92415 0.620902 8.57585 0.620907 8.72553 1.08156L9.90735 4.71885C10.1082 5.33688 10.6841 5.75532 11.3339 5.75532H15.1584C15.6428 5.75532 15.8442 6.37513 15.4523 6.65983L12.3582 8.9078C11.8325 9.28976 11.6125 9.96681 11.8133 10.5848L12.9952 14.2221C13.1448 14.6828 12.6176 15.0659 12.2257 14.7812L9.13168 12.5332C8.60595 12.1512 7.89405 12.1512 7.36832 12.5332L4.27426 14.7812C3.8824 15.0659 3.35516 14.6828 3.50484 14.2221L4.68667 10.5848C4.88748 9.96682 4.66749 9.28976 4.14176 8.9078L1.0477 6.65983C0.65584 6.37513 0.85723 5.75532 1.34159 5.75532H5.16606C5.8159 5.75532 6.39183 5.33688 6.59265 4.71885L7.77447 1.08156Z"
+                        stroke="#6E93C4"
+                      />
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="17"
+                      height="16"
+                      viewBox="0 0 17 16"
+                      fill="none"
+                    >
+                      <path
+                        d="M7.29894 0.927052C7.5983 0.0057416 8.9017 0.00573945 9.20106 0.92705L10.3829 4.56434C10.5168 4.97636 10.9007 5.25532 11.3339 5.25532H15.1584C16.1271 5.25532 16.5299 6.49494 15.7462 7.06434L12.6521 9.31231C12.3016 9.56695 12.155 10.0183 12.2889 10.4303L13.4707 14.0676C13.77 14.9889 12.7156 15.7551 11.9318 15.1857L8.83779 12.9377C8.4873 12.6831 8.0127 12.6831 7.66222 12.9377L4.56815 15.1857C3.78444 15.7551 2.72996 14.9889 3.02931 14.0676L4.21114 10.4303C4.34501 10.0183 4.19835 9.56695 3.84787 9.31231L0.753806 7.06434C-0.0299077 6.49494 0.372867 5.25532 1.34159 5.25532H5.16606C5.59929 5.25532 5.98324 4.97636 6.11712 4.56434L7.29894 0.927052Z"
+                        fill="#6E93C4"
+                      />
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="17"
+                      height="16"
+                      viewBox="0 0 17 16"
+                      fill="none"
+                    >
+                      <path
+                        d="M7.29894 0.927052C7.5983 0.0057416 8.9017 0.00573945 9.20106 0.92705L10.3829 4.56434C10.5168 4.97636 10.9007 5.25532 11.3339 5.25532H15.1584C16.1271 5.25532 16.5299 6.49494 15.7462 7.06434L12.6521 9.31231C12.3016 9.56695 12.155 10.0183 12.2889 10.4303L13.4707 14.0676C13.77 14.9889 12.7156 15.7551 11.9318 15.1857L8.83779 12.9377C8.4873 12.6831 8.0127 12.6831 7.66222 12.9377L4.56815 15.1857C3.78444 15.7551 2.72996 14.9889 3.02931 14.0676L4.21114 10.4303C4.34501 10.0183 4.19835 9.56695 3.84787 9.31231L0.753806 7.06434C-0.0299077 6.49494 0.372867 5.25532 1.34159 5.25532H5.16606C5.59929 5.25532 5.98324 4.97636 6.11712 4.56434L7.29894 0.927052Z"
+                        fill="#6E93C4"
+                      />
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="17"
+                      height="16"
+                      viewBox="0 0 17 16"
+                      fill="none"
+                    >
+                      <path
+                        d="M7.29894 0.927052C7.5983 0.0057416 8.9017 0.00573945 9.20106 0.92705L10.3829 4.56434C10.5168 4.97636 10.9007 5.25532 11.3339 5.25532H15.1584C16.1271 5.25532 16.5299 6.49494 15.7462 7.06434L12.6521 9.31231C12.3016 9.56695 12.155 10.0183 12.2889 10.4303L13.4707 14.0676C13.77 14.9889 12.7156 15.7551 11.9318 15.1857L8.83779 12.9377C8.4873 12.6831 8.0127 12.6831 7.66222 12.9377L4.56815 15.1857C3.78444 15.7551 2.72996 14.9889 3.02931 14.0676L4.21114 10.4303C4.34501 10.0183 4.19835 9.56695 3.84787 9.31231L0.753806 7.06434C-0.0299077 6.49494 0.372867 5.25532 1.34159 5.25532H5.16606C5.59929 5.25532 5.98324 4.97636 6.11712 4.56434L7.29894 0.927052Z"
+                        fill="#6E93C4"
+                      />
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="17"
+                      height="16"
+                      viewBox="0 0 17 16"
+                      fill="none"
+                    >
+                      <path
+                        d="M7.29894 0.927052C7.5983 0.0057416 8.9017 0.00573945 9.20106 0.92705L10.3829 4.56434C10.5168 4.97636 10.9007 5.25532 11.3339 5.25532H15.1584C16.1271 5.25532 16.5299 6.49494 15.7462 7.06434L12.6521 9.31231C12.3016 9.56695 12.155 10.0183 12.2889 10.4303L13.4707 14.0676C13.77 14.9889 12.7156 15.7551 11.9318 15.1857L8.83779 12.9377C8.4873 12.6831 8.0127 12.6831 7.66222 12.9377L4.56815 15.1857C3.78444 15.7551 2.72996 14.9889 3.02931 14.0676L4.21114 10.4303C4.34501 10.0183 4.19835 9.56695 3.84787 9.31231L0.753806 7.06434C-0.0299077 6.49494 0.372867 5.25532 1.34159 5.25532H5.16606C5.59929 5.25532 5.98324 4.97636 6.11712 4.56434L7.29894 0.927052Z"
+                        fill="#6E93C4"
+                      />
+                    </svg>
+                  </div>
+                </div>
+
+                <button class="buy-btn">
+                  <img
+                    src="assets/img/shopping-bag.svg"
+                    width="24px"
+                    height="24px"
+                    alt=""
+                  />
+                  <p>خرید</p>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer">
+        <div class="bg-footer-overlay"></div>
+        <div class="container">
+          <div
+            class="row justify-content-between align-items-center gap-5 gap-lg-0"
+          >
+            <div class="col-lg-3 col-12">
+              <img src="assets/img/Frame 4.png" alt="" />
+            </div>
+            <div class="col-lg-4 col-12 text-white z1">
+              <p class="w-100">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="27"
+                  height="27"
+                  viewBox="0 0 27 27"
+                  fill="none"
+                >
+                  <path
+                    d="M8.57699 4.70806C8.77132 4.60206 8.97783 4.76514 8.97783 4.9865V19.7034C8.97783 19.9267 8.8259 20.1159 8.62678 20.2169C8.60996 20.2254 8.59338 20.2341 8.57699 20.2431L6.03116 21.6947C4.25449 22.7131 2.79199 21.8681 2.79199 19.8097V9.2689C2.79199 8.5864 3.27949 7.7414 3.88616 7.39473L8.57699 4.70806Z"
+                    fill="#DCDCDC"
+                  />
+                  <path
+                    d="M16.2832 7.46288C16.4535 7.54723 16.5613 7.72087 16.5613 7.91094V22.2524C16.5613 22.6209 16.1762 22.8627 15.8443 22.7028L11.1568 20.4444C10.9838 20.3611 10.8738 20.186 10.8738 19.994V5.58951C10.8738 5.21865 11.2633 4.97686 11.5957 5.14145L16.2832 7.46288Z"
+                    fill="#DCDCDC"
+                  />
+                  <path
+                    d="M24.1445 7.8714V18.4122C24.1445 19.0947 23.657 19.9397 23.0504 20.2864L19.2057 22.4899C18.8723 22.6809 18.457 22.4402 18.457 22.056V7.67422C18.457 7.4947 18.5533 7.32897 18.7092 7.23998L20.9054 5.9864C22.682 4.96806 24.1445 5.81306 24.1445 7.8714Z"
+                    fill="#DCDCDC"
+                  />
+                </svg>
+                تهران، ادامه آدرس اینجا و به صورت خطی قرار میگیرد .
+              </p>
+              <div class="d-flex align-items-center justify-content-between">
+                <p>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="27"
+                    height="27"
+                    viewBox="0 0 27 27"
+                    fill="none"
+                  >
+                    <path
+                      d="M12.2822 17.0364L10.278 19.0405C9.85553 19.463 9.18386 19.463 8.75053 19.0514C8.63136 18.9322 8.51219 18.8239 8.39303 18.7047C7.27719 17.578 6.26969 16.3972 5.37053 15.1622C4.48219 13.9272 3.76719 12.6922 3.24719 11.468C2.73803 10.233 2.47803 9.0522 2.47803 7.92554C2.47803 7.18887 2.60803 6.4847 2.86803 5.8347C3.12803 5.17387 3.53969 4.5672 4.11386 4.02554C4.80719 3.34304 5.56553 3.0072 6.36719 3.0072C6.67053 3.0072 6.97386 3.0722 7.24469 3.2022C7.52636 3.3322 7.77553 3.5272 7.97053 3.80887L10.4839 7.35137C10.6789 7.6222 10.8197 7.87137 10.9172 8.1097C11.0147 8.3372 11.0689 8.5647 11.0689 8.77054C11.0689 9.03054 10.993 9.29054 10.8414 9.5397C10.7005 9.78887 10.4947 10.0489 10.2347 10.3089L9.41136 11.1647C9.29219 11.2839 9.23803 11.4247 9.23803 11.598C9.23803 11.6847 9.24886 11.7605 9.27053 11.8472C9.30303 11.9339 9.33553 11.9989 9.35719 12.0639C9.55219 12.4214 9.88803 12.8872 10.3647 13.4505C10.8522 14.0139 11.3722 14.588 11.9355 15.1622C12.0439 15.2705 12.163 15.3789 12.2714 15.4872C12.7047 15.9097 12.7155 16.603 12.2822 17.0364Z"
+                      fill="#DCDCDC"
+                    />
+                    <path
+                      d="M24.112 20.698C24.112 21.0014 24.0578 21.3155 23.9495 21.6189C23.917 21.7055 23.8845 21.7922 23.8412 21.8789C23.657 22.2689 23.4187 22.6372 23.1045 22.9839C22.5737 23.5689 21.9887 23.9914 21.3278 24.2622C21.317 24.2622 21.3062 24.273 21.2953 24.273C20.6562 24.533 19.9628 24.6739 19.2153 24.6739C18.1103 24.6739 16.9295 24.4139 15.6837 23.883C14.4378 23.3522 13.192 22.6372 11.957 21.738C11.5345 21.4239 11.112 21.1097 10.7112 20.7739L14.2537 17.2314C14.557 17.4589 14.8278 17.6322 15.0553 17.7514C15.1095 17.773 15.1745 17.8055 15.2503 17.838C15.337 17.8705 15.4237 17.8814 15.5212 17.8814C15.7053 17.8814 15.8462 17.8164 15.9653 17.6972L16.7887 16.8847C17.0595 16.6139 17.3195 16.408 17.5687 16.278C17.8178 16.1264 18.067 16.0505 18.3378 16.0505C18.5437 16.0505 18.7603 16.0939 18.9987 16.1914C19.237 16.2889 19.4862 16.4297 19.757 16.6139L23.3428 19.1597C23.6245 19.3547 23.8195 19.5822 23.9387 19.853C24.047 20.1239 24.112 20.3947 24.112 20.698Z"
+                      fill="#DCDCDC"
+                    />
+                  </svg>
+                  021 - 656532132
+                </p>
+                <p>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="27"
+                    height="27"
+                    viewBox="0 0 27 27"
+                    fill="none"
+                  >
+                    <path
+                      d="M18.728 4.6322H7.89469C4.64469 4.6322 2.47803 6.2572 2.47803 10.0489V17.6322C2.47803 21.4239 4.64469 23.0489 7.89469 23.0489H18.728C21.978 23.0489 24.1447 21.4239 24.1447 17.6322V10.0489C24.1447 6.2572 21.978 4.6322 18.728 4.6322ZM19.2372 11.2297L15.8464 13.938C15.1314 14.5122 14.2214 14.7939 13.3114 14.7939C12.4014 14.7939 11.4805 14.5122 10.7764 13.938L7.38553 11.2297C7.03886 10.948 6.98469 10.428 7.25553 10.0814C7.53719 9.7347 8.04636 9.6697 8.39303 9.95137L11.7839 12.6597C12.6072 13.3205 14.0047 13.3205 14.828 12.6597L18.2189 9.95137C18.5655 9.6697 19.0855 9.72387 19.3564 10.0814C19.638 10.428 19.5839 10.948 19.2372 11.2297Z"
+                      fill="#DCDCDC"
+                    />
+                  </svg>
+                  Info@mail.com
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-2 col-12">
+              <div class="position-relative">
+                <ul class="d-flex align-items-center justify-content-end gap-4">
+                  <li>
+                    <a href="#">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="29"
+                        height="24"
+                        viewBox="0 0 29 24"
+                        fill="none"
+                      >
+                        <path
+                          d="M26.9269 0.340666C25.9804 0.358554 24.5269 0.869641 17.5382 3.82117C12.6326 5.92762 7.74062 8.06742 2.86255 10.2404C1.67001 10.7234 1.0489 11.1936 0.991759 11.6536C0.882443 12.5378 2.13461 12.8112 3.70975 13.3325C4.99421 13.7567 6.72338 14.2524 7.62275 14.2729C8.43765 14.2908 9.34696 13.9484 10.3507 13.2507C17.2078 8.54872 20.7431 6.17472 20.9667 6.12361C21.1233 6.08784 21.3394 6.04184 21.4885 6.17472C21.635 6.3076 21.6201 6.55804 21.6028 6.62703C21.4785 7.16623 15.0413 13.1127 14.6711 13.5037L14.4923 13.6877C13.1258 15.0753 11.7469 15.9825 14.127 17.5745C16.2786 19.0132 17.5307 19.9306 19.7419 21.4077C21.158 22.3481 22.2686 23.4648 23.7294 23.3294C24.4027 23.2655 25.0959 22.6241 25.4512 20.7075C26.2834 16.1844 27.9232 6.3766 28.3008 2.33391C28.3237 1.99858 28.3095 1.66167 28.2586 1.32962C28.2279 1.06154 28.1002 0.815185 27.9008 0.639652C27.6002 0.38922 27.1331 0.33811 26.9269 0.340666Z"
+                          fill="white"
+                        />
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="27"
+                        height="27"
+                        viewBox="0 0 27 27"
+                        fill="none"
+                      >
+                        <path
+                          d="M6.40084 26.3406H0.764801V8.2032H6.40084V26.3406ZM3.54803 5.97661C1.76792 5.97661 0.616943 4.71546 0.616943 3.1557C0.616943 1.56404 1.80271 0.340576 3.62051 0.340576C5.43831 0.340576 6.5516 1.56404 6.58639 3.1557C6.58639 4.71546 5.43831 5.97661 3.54803 5.97661ZM26.9851 26.3406H21.3491V16.2891C21.3491 13.9494 20.5315 12.3606 18.4934 12.3606C16.9365 12.3606 16.0117 13.4363 15.6029 14.4713C15.4521 14.8395 15.4144 15.3613 15.4144 15.8803V26.3377H9.77551V13.9871C9.77551 11.7228 9.70303 9.82965 9.62765 8.2003H14.5244L14.7824 10.7197H14.8955C15.6377 9.53683 17.4555 7.79151 20.4967 7.79151C24.2048 7.79151 26.9851 10.2761 26.9851 15.6164V26.3406Z"
+                          fill="white"
+                        />
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="26"
+                        height="27"
+                        viewBox="0 0 26 27"
+                        fill="none"
+                      >
+                        <path
+                          d="M25.5371 8.0146C25.5233 6.92291 25.3283 5.84208 24.961 4.82045C24.6425 3.95871 24.156 3.1761 23.5325 2.52261C22.9091 1.86913 22.1626 1.35914 21.3405 1.02524C20.3784 0.646668 19.362 0.441966 18.3346 0.419853C17.0118 0.357873 16.5924 0.340576 13.2346 0.340576C9.87669 0.340576 9.4463 0.340576 8.13312 0.419853C7.10618 0.442129 6.09028 0.646828 5.12864 1.02524C4.30644 1.35891 3.55973 1.86881 2.9363 2.52233C2.31287 3.17584 1.82644 3.95858 1.50813 4.82045C1.14626 5.82818 0.951403 6.89335 0.931983 7.96992C0.872856 9.35799 0.85498 9.79761 0.85498 13.3175C0.85498 16.8374 0.85498 17.2871 0.931983 18.6651C0.952609 19.7433 1.14649 20.807 1.50813 21.8175C1.82697 22.6791 2.31377 23.4615 2.93741 24.1147C3.56105 24.768 4.30782 25.2777 5.13001 25.6112C6.08902 26.005 7.1051 26.2244 8.1345 26.2599C9.45867 26.3218 9.87806 26.3406 13.2359 26.3406C16.5938 26.3406 17.0242 26.3406 18.3374 26.2599C19.3647 26.2387 20.3812 26.0344 21.3432 25.6559C22.1651 25.3216 22.9115 24.8115 23.5348 24.1581C24.1582 23.5046 24.6448 22.7222 24.9637 21.8607C25.3254 20.8517 25.5193 19.788 25.5399 18.7084C25.599 17.3217 25.6169 16.8821 25.6169 13.3608C25.6141 9.84085 25.6141 9.39402 25.5371 8.0146ZM13.2263 19.9739C9.71443 19.9739 6.86945 16.9916 6.86945 13.3103C6.86945 9.62897 9.71443 6.64671 13.2263 6.64671C14.9123 6.64671 16.5291 7.34876 17.7213 8.59843C18.9134 9.8481 19.5832 11.543 19.5832 13.3103C19.5832 15.0776 18.9134 16.7725 17.7213 18.0222C16.5291 19.2719 14.9123 19.9739 13.2263 19.9739ZM19.8362 7.95406C19.6415 7.95425 19.4486 7.91419 19.2687 7.83617C19.0888 7.75815 18.9253 7.6437 18.7876 7.49938C18.6499 7.35505 18.5408 7.18368 18.4663 6.99508C18.3919 6.80647 18.3537 6.60433 18.3539 6.40023C18.3539 6.19627 18.3922 5.99431 18.4667 5.80588C18.5411 5.61745 18.6502 5.44623 18.7878 5.30201C18.9254 5.15779 19.0887 5.04339 19.2685 4.96534C19.4483 4.88729 19.6409 4.84712 19.8355 4.84712C20.0301 4.84712 20.2227 4.88729 20.4025 4.96534C20.5822 5.04339 20.7456 5.15779 20.8832 5.30201C21.0207 5.44623 21.1299 5.61745 21.2043 5.80588C21.2788 5.99431 21.3171 6.19627 21.3171 6.40023C21.3171 7.2593 20.6543 7.95406 19.8362 7.95406Z"
+                          fill="white"
+                        />
+                        <path
+                          d="M13.2263 17.6388C15.5068 17.6388 17.3556 15.7009 17.3556 13.3103C17.3556 10.9197 15.5068 8.98178 13.2263 8.98178C10.9458 8.98178 9.09703 10.9197 9.09703 13.3103C9.09703 15.7009 10.9458 17.6388 13.2263 17.6388Z"
+                          fill="white"
+                        />
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+                <span class="x1"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
