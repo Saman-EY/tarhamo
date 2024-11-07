@@ -70,6 +70,13 @@
     border-left: 0;
     border-bottom: 1px solid black;
   }
+
+  .ReviewsContainer .Card {
+    flex-direction: column;
+  }
+  .footer .x1 {
+    display: none;
+  }
 }
 @media (max-width: 500px) {
   .list-category img {
