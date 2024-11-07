@@ -5,11 +5,9 @@
 }
 
 @media (max-width: 1200px) {
-
-
-    .disegn-pic-main {
-        width: 100%;
-    }
+  .disegn-pic-main {
+    width: 100%;
+  }
   .list-menu-header ul li svg {
     width: 20px;
     height: 20px;
@@ -18,7 +16,8 @@
     gap: 0;
   }
   .desktop-header,
-  .list-menu-header , .wave-img img {
+  .list-menu-header,
+  .wave-img img {
     display: none;
   }
 
@@ -61,6 +60,15 @@
 @media (max-width: 767px) {
   .tabs {
     width: unset;
+  }
+
+  .single-product-fourth {
+    border: 0;
+  }
+
+  .single-product-fourth .FormContainer {
+    border-left: 0;
+    border-bottom: 1px solid black;
   }
 }
 @media (max-width: 500px) {
