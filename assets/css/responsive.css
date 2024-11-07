@@ -77,9 +77,21 @@
   .footer .x1 {
     display: none;
   }
+
+  .twoSliders .mySwiper3 .Utils {
+    display: none !important;
+  }
 }
 @media (max-width: 500px) {
   .list-category img {
     width: 100%;
+  }
+
+  .twoSliders .mySwiper4 {
+    max-width: 300px;
+  }
+
+  .twoSliders .mySwiper3 {
+    max-width: 280px;
   }
 }
