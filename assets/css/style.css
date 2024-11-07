@@ -402,7 +402,11 @@ button {
   object-fit: cover;
 }
 .tab-list-btn {
-  text-align: center;
+  /* text-align: center; */
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
   margin-top: 23px;
   margin-bottom: 57px;
 }
@@ -412,11 +416,15 @@ button {
   gap: 15px;
   border-radius: 40px;
   border: 1px solid #6e93c4;
-  background: #9c5739;
   outline: unset;
   font-size: 15px;
   font-weight: 500;
   line-height: 24.78px;
+  color: #6e93c4;
+}
+.tab-list-btn button.active {
+  border: 1px solid #6e93c4;
+  background: #9c5739;
   color: #fff;
 }
 
@@ -427,158 +435,54 @@ button {
   gap: 28px;
   margin-bottom: 57px;
 }
-
-.div8 {
-  grid-row: span 2 / span 2;
-  grid-column-start: 5;
-  grid-row-start: 1;
-}
-
-.div9 {
-  grid-row: span 2 / span 2;
-  grid-column-start: 5;
-  grid-row-start: 3;
-}
-
-.div10 {
-  grid-row: span 2 / span 2;
-  grid-column-start: 5;
-  grid-row-start: 5;
-}
-
-.div11 {
-  grid-row: span 2 / span 2;
-  grid-column-start: 5;
-  grid-row-start: 7;
-}
-
-.div12 {
-  grid-row: span 2 / span 2;
-  grid-column-start: 4;
-  grid-row-start: 2;
-}
-
-.div13 {
-  grid-row: span 2 / span 2;
-  grid-column-start: 4;
-  grid-row-start: 4;
-}
-
-.div14 {
-  grid-row: span 2 / span 2;
-  grid-column-start: 4;
-  grid-row-start: 6;
-}
-
-.div15 {
-  grid-row: span 2 / span 2;
-  grid-column-start: 4;
-  grid-row-start: 8;
-}
-
-.div16 {
-  grid-row: span 2 / span 2;
-  grid-column-start: 3;
-  grid-row-start: 1;
-}
-
-.div17 {
-  grid-row: span 2 / span 2;
-  grid-column-start: 3;
-  grid-row-start: 3;
-}
-
-.div18 {
-  grid-row: span 2 / span 2;
-  grid-column-start: 3;
-  grid-row-start: 5;
-}
-
-.div19 {
-  grid-row: span 2 / span 2;
-  grid-column-start: 3;
-  grid-row-start: 7;
-}
-
-.div20 {
-  grid-row: span 2 / span 2;
-  grid-column-start: 2;
-  grid-row-start: 2;
-}
-
-.div21 {
-  grid-row: span 2 / span 2;
-  grid-column-start: 2;
-  grid-row-start: 4;
-}
-
-.div22 {
-  grid-row: span 2 / span 2;
-  grid-column-start: 2;
-  grid-row-start: 6;
-}
-
-.div23 {
-  grid-row: span 2 / span 2;
-  grid-column-start: 2;
-  grid-row-start: 8;
-}
-
-.div24 {
-  grid-row: span 2 / span 2;
-  grid-column-start: 1;
-  grid-row-start: 1;
-}
-
-.div25 {
-  grid-row: span 2 / span 2;
-  grid-column-start: 1;
-  grid-row-start: 3;
-}
-
-.div26 {
-  grid-row: span 2 / span 2;
-  grid-column-start: 1;
-  grid-row-start: 5;
-}
-
-.div27 {
-  grid-row: span 2 / span 2;
-  grid-column-start: 1;
-  grid-row-start: 7;
-}
-
 .parent > div {
-  position: relative;
+  border-radius: 200px;
+  border: 1px solid #3f6698;
+  overflow: hidden;
+  width: 210px;
+  height: 374px;
 }
-.parent > div img {
+
+.parent > div::after {
+  content: "";
+  position: absolute;
+  inset: 0;
   width: 100%;
   height: 100%;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(0, 0, 0, 0.76) 100%
+  );
+  backdrop-filter: blur(4.449999809265137px);
+  opacity: 0;
+  visibility: hidden;
+  transition: all ease 0.3s;
 }
 
-.star-rating {
-  display: flex;
-  font-size: 24px;
-  color: #ccc;
-  cursor: pointer;
+.parent > div:hover::after {
+  opacity: 100;
+  visibility: visible;
 }
-.star-rating .star {
-  color: gold;
+.parent > div:hover .info-designers-pic a {
+  background: #fff;
+  color: #3f6698;
 }
-
-.filled {
-  color: red;
+.parent > div:hover .info-designers-pic a > svg {
+  display: block;
 }
 
 .info-designers-pic {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 16px;
   position: absolute;
   bottom: 0;
   right: 50%;
   transform: translate3d(50px, -25px, 20px);
+  z-index: 10;
 }
+
 .info-designers-pic p {
   font-size: 14px;
   font-weight: 500;
@@ -603,6 +507,377 @@ button {
   font-weight: 500;
   line-height: 16px;
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  width: 100px;
+  height: 40px;
+}
+.info-designers-pic a > svg {
+  display: none;
+}
+
+.div8 {
+  grid-row: span 2 / span 2;
+  grid-column-start: 5;
+  grid-row-start: 1;
+  background-image: linear-gradient(
+      180.07deg,
+      rgba(0, 0, 0, 0) 42.78%,
+      #000000 81.41%
+    ),
+    url("../img/pic1.png");
+  background-repeat: no-repeat;
+
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.div9 {
+  grid-row: span 2 / span 2;
+  grid-column-start: 5;
+  grid-row-start: 3;
+  background-image: linear-gradient(
+      180.07deg,
+      rgba(0, 0, 0, 0) 42.78%,
+      #000000 81.41%
+    ),
+    url("../img/pic2.png");
+  background-repeat: no-repeat;
+
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.div10 {
+  grid-row: span 2 / span 2;
+  grid-column-start: 5;
+  grid-row-start: 5;
+  background-image: linear-gradient(
+      180.07deg,
+      rgba(0, 0, 0, 0) 42.78%,
+      #000000 81.41%
+    ),
+    url("../img/pic3.png");
+  background-repeat: no-repeat;
+
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.div11 {
+  grid-row: span 2 / span 2;
+  grid-column-start: 5;
+  grid-row-start: 7;
+  background-image: linear-gradient(
+      180.07deg,
+      rgba(0, 0, 0, 0) 42.78%,
+      #000000 81.41%
+    ),
+    url("../img/pic4.png");
+  background-repeat: no-repeat;
+
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.div12 {
+  grid-row: span 2 / span 2;
+  grid-column-start: 4;
+  grid-row-start: 2;
+  background-image: linear-gradient(
+      180.07deg,
+      rgba(0, 0, 0, 0) 42.78%,
+      #000000 81.41%
+    ),
+    url("../img/pic1.png");
+  background-repeat: no-repeat;
+
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.div13 {
+  grid-row: span 2 / span 2;
+  grid-column-start: 4;
+  grid-row-start: 4;
+  background-image: linear-gradient(
+      180.07deg,
+      rgba(0, 0, 0, 0) 42.78%,
+      #000000 81.41%
+    ),
+    url("../img/pic2.png");
+  background-repeat: no-repeat;
+
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.div14 {
+  grid-row: span 2 / span 2;
+  grid-column-start: 4;
+  grid-row-start: 6;
+  background-image: linear-gradient(
+      180.07deg,
+      rgba(0, 0, 0, 0) 42.78%,
+      #000000 81.41%
+    ),
+    url("../img/pic3.png");
+  background-repeat: no-repeat;
+
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.div15 {
+  grid-row: span 2 / span 2;
+  grid-column-start: 4;
+  grid-row-start: 8;
+  background-image: linear-gradient(
+      180.07deg,
+      rgba(0, 0, 0, 0) 42.78%,
+      #000000 81.41%
+    ),
+    url("../img/pic4.png");
+  background-repeat: no-repeat;
+
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.div16 {
+  grid-row: span 2 / span 2;
+  grid-column-start: 3;
+  grid-row-start: 1;
+  background-image: linear-gradient(
+      180.07deg,
+      rgba(0, 0, 0, 0) 42.78%,
+      #000000 81.41%
+    ),
+    url("../img/pic1.png");
+  background-repeat: no-repeat;
+
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.div17 {
+  grid-row: span 2 / span 2;
+  grid-column-start: 3;
+  grid-row-start: 3;
+  background-image: linear-gradient(
+      180.07deg,
+      rgba(0, 0, 0, 0) 42.78%,
+      #000000 81.41%
+    ),
+    url("../img/pic2.png");
+  background-repeat: no-repeat;
+
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.div18 {
+  grid-row: span 2 / span 2;
+  grid-column-start: 3;
+  grid-row-start: 5;
+  background-image: linear-gradient(
+      180.07deg,
+      rgba(0, 0, 0, 0) 42.78%,
+      #000000 81.41%
+    ),
+    url("../img/pic3.png");
+  background-repeat: no-repeat;
+
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.div19 {
+  grid-row: span 2 / span 2;
+  grid-column-start: 3;
+  grid-row-start: 7;
+  background-image: linear-gradient(
+      180.07deg,
+      rgba(0, 0, 0, 0) 42.78%,
+      #000000 81.41%
+    ),
+    url("../img/pic4.png");
+  background-repeat: no-repeat;
+
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.div20 {
+  grid-row: span 2 / span 2;
+  grid-column-start: 2;
+  grid-row-start: 2;
+  background-image: linear-gradient(
+      180.07deg,
+      rgba(0, 0, 0, 0) 42.78%,
+      #000000 81.41%
+    ),
+    url("../img/pic1.png");
+  background-repeat: no-repeat;
+
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.div21 {
+  grid-row: span 2 / span 2;
+  grid-column-start: 2;
+  grid-row-start: 4;
+  background-image: linear-gradient(
+      180.07deg,
+      rgba(0, 0, 0, 0) 42.78%,
+      #000000 81.41%
+    ),
+    url("../img/pic2.png");
+  background-repeat: no-repeat;
+
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.div22 {
+  grid-row: span 2 / span 2;
+  grid-column-start: 2;
+  grid-row-start: 6;
+  background-image: linear-gradient(
+      180.07deg,
+      rgba(0, 0, 0, 0) 42.78%,
+      #000000 81.41%
+    ),
+    url("../img/pic3.png");
+  background-repeat: no-repeat;
+
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.div23 {
+  grid-row: span 2 / span 2;
+  grid-column-start: 2;
+  grid-row-start: 8;
+  background-image: linear-gradient(
+      180.07deg,
+      rgba(0, 0, 0, 0) 42.78%,
+      #000000 81.41%
+    ),
+    url("../img/pic4.png");
+  background-repeat: no-repeat;
+
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.div24 {
+  grid-row: span 2 / span 2;
+  grid-column-start: 1;
+  grid-row-start: 1;
+  background-image: linear-gradient(
+      180.07deg,
+      rgba(0, 0, 0, 0) 42.78%,
+      #000000 81.41%
+    ),
+    url("../img/pic1.png");
+  background-repeat: no-repeat;
+
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.div25 {
+  grid-row: span 2 / span 2;
+  grid-column-start: 1;
+  grid-row-start: 3;
+  background-image: linear-gradient(
+      180.07deg,
+      rgba(0, 0, 0, 0) 42.78%,
+      #000000 81.41%
+    ),
+    url("../img/pic2.png");
+  background-repeat: no-repeat;
+
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.div26 {
+  grid-row: span 2 / span 2;
+  grid-column-start: 1;
+  grid-row-start: 5;
+  background-image: linear-gradient(
+      180.07deg,
+      rgba(0, 0, 0, 0) 42.78%,
+      #000000 81.41%
+    ),
+    url("../img/pic3.png");
+  background-repeat: no-repeat;
+
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.div27 {
+  grid-row: span 2 / span 2;
+  grid-column-start: 1;
+  grid-row-start: 7;
+  background-image: linear-gradient(
+      180.07deg,
+      rgba(0, 0, 0, 0) 42.78%,
+      #000000 81.41%
+    ),
+    url("../img/pic4.png");
+  background-repeat: no-repeat;
+
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.parent > div {
+  position: relative;
+}
+.parent > div img {
+  width: 100%;
+  height: 100%;
+}
+
+.star-rating {
+  display: flex;
+  font-size: 24px;
+  color: #ccc;
+  cursor: pointer;
+}
+.star-rating .star {
+  color: gold;
+}
+
+.filled {
+  color: red;
 }
 
 .tabs {
