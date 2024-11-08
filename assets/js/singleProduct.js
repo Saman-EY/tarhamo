@@ -36,6 +36,18 @@ let swiper2 = new Swiper(".mySwiper2", {
   },
 });
 
+const customPrevBtn2 = document.getElementById("slidernext2");
+const customNextBtn2 = document.getElementById("sliderprev2");
+
+// Add event listeners to custom buttons
+customPrevBtn2.addEventListener("click", function () {
+  swiper2.slidePrev(); // Go to the previous slide
+});
+
+customNextBtn2.addEventListener("click", function () {
+  swiper2.slideNext(); // Go to the next slide
+});
+
 //  gallery
 let swiper4 = new Swiper(".mySwiper4", {
   spaceBetween: 10,

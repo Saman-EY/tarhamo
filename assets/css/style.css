@@ -1201,9 +1201,69 @@ header {
   padding: 2rem !important;
 }
 
-.footer .z1 {
+.mySwiper1 .Utils,
+.mySwiper2 .Utils {
+  padding: 2rem !important;
   /* background-color: red; */
-  /* max-width: 340px; */
+  position: relative;
+}
+.mySwiper1 .Utils .swiper-pagination,
+.mySwiper2 .Utils .swiper-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.mySwiper1 .Utils .swiper-pagination-bullet,
+.mySwiper2 .Utils .swiper-pagination-bullet {
+  background: #000000;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  opacity: 1;
+}
+.mySwiper1 .Utils .swiper-pagination-bullet-active,
+.mySwiper2 .Utils .swiper-pagination-bullet-active {
+  width: 35px;
+  border-radius: 8px;
+  background-color: #3f6698;
+}
+
+.mySwiper1 + #slidernext2,
+.mySwiper1 ~ #sliderprev2,
+.mySwiper2 + #slidernext2,
+.mySwiper2 ~ #sliderprev2 {
+  border-radius: 100px;
+  border: 1px solid #fff;
+  color: #fff;
+
+  display: flex;
+  padding: 15px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  position: absolute;
+
+  top: 45%;
+  transform: translateY(-50%);
+  right: -25px;
+  z-index: 10;
+}
+
+.mySwiper1 + #slidernext2.blue,
+.mySwiper1 ~ #sliderprev2.blue,
+.mySwiper2 ~ #sliderprev2.blue,
+.mySwiper2 + #slidernext2.blue {
+  border: 0.6px solid #3f6698;
+  color: #3f6698;
+}
+
+.mySwiper1 ~ #sliderprev2, .mySwiper2 ~ #sliderprev2 {
+  right: auto;
+  left: -25px;
+}
+
+.footer .z1 {
   display: flex;
   flex-direction: column;
   width: fit-content;

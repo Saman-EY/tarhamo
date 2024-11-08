@@ -39,6 +39,18 @@ document.addEventListener("DOMContentLoaded", function () {
     },
   });
 
+  const customPrevBtn2 = document.getElementById("slidernext2");
+  const customNextBtn2 = document.getElementById("sliderprev2");
+
+  // Add event listeners to custom buttons
+  customPrevBtn2.addEventListener("click", function () {
+    swiper1.slidePrev(); // Go to the previous slide
+  });
+
+  customNextBtn2.addEventListener("click", function () {
+    swiper1.slideNext(); // Go to the next slide
+  });
+
   // انتخاب تب‌ها و محتواهای تب‌ها
   const tabs = document.querySelectorAll(".tab");
   // const tabContents = document.querySelectorAll(".tab-content");

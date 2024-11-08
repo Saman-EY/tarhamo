@@ -81,6 +81,13 @@
   .twoSliders .mySwiper3 .Utils {
     display: none !important;
   }
+
+  .mySwiper1 + #slidernext2 {
+    display: none;
+  }
+  .mySwiper1 ~ #sliderprev2 {
+    display: none;
+  }
 }
 @media (max-width: 500px) {
   .list-category img {
