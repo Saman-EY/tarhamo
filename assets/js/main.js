@@ -51,38 +51,22 @@ document.addEventListener("DOMContentLoaded", function () {
     swiper1.slideNext(); // Go to the next slide
   });
 
-  // انتخاب تب‌ها و محتواهای تب‌ها
-  const tabs = document.querySelectorAll(".tab");
-  // const tabContents = document.querySelectorAll(".tab-content");
-
-  // تابعی برای تغییر تب
-  // function switchTab(tab) {
-  //   tabs.forEach((t) => t.classList.remove("active"));
-  //   tabContents.forEach((tc) => tc.classList.remove("active"));
-
-  //   tab.classList.add("active");
-  //   document
-  //     .getElementById(tab.getAttribute("data-tab"))
-  //     .classList.add("active");
-
-  //   // فعال‌سازی Swiper در تب مورد نظر
-  //   const swiperClass = `.mySwiper${tab
-  //     .getAttribute("data-tab")
-  //     .slice(-1)}`;
-  //   new Swiper(swiperClass, {
-  //     loop: true,
-  //     pagination: {
-  //       el: ".swiper-pagination",
-  //       clickable: true,
-  //     },
-  //   });
-  // }
-
   // رویداد کلیک برای هر تب
   tabs.forEach((tab) => {
     tab.addEventListener("click", () => {
       // Toggle the 'active' class
       tab.classList.toggle("active");
     });
+  });
+});
+
+// Select all elements with the class "heart"
+const hearts = document.querySelectorAll(".heart");
+
+// Add click event listener to each heart
+hearts.forEach((heart) => {
+  heart.addEventListener("click", () => {
+    // Toggle the "active" class on the clicked heart
+    heart.classList.toggle("active");
   });
 });

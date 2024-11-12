@@ -100,3 +100,14 @@ customPrevBtn1.addEventListener("click", function () {
 customNextBtn1.addEventListener("click", function () {
   swiper3.slideNext(); // Go to the next slide
 });
+
+// Select all elements with the class "heart"
+const hearts = document.querySelectorAll(".heart");
+
+// Add click event listener to each heart
+hearts.forEach((heart) => {
+  heart.addEventListener("click", () => {
+    // Toggle the "active" class on the clicked heart
+    heart.classList.toggle("active");
+  });
+});
