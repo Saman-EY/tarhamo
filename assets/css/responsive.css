@@ -85,10 +85,10 @@
     display: none !important;
   }
 
-  .mySwiper1 + #slidernext2 {
+  .mySwiper1 + #slidernext2 , .mySwiper2 + #slidernext2 {
     display: none;
   }
-  .mySwiper1 ~ #sliderprev2 {
+  .mySwiper1 ~ #sliderprev2, .mySwiper2 ~ #sliderprev2  {
     display: none;
   }
 }

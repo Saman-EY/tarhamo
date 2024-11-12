@@ -989,6 +989,7 @@ button {
   border-radius: 43px;
   border: 0.6px solid #000;
   background: #fff;
+  color: black;
   /* background: #6E93C4; */
   position: absolute;
   left: 50%;
@@ -999,6 +1000,12 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
+}
+.card-item-product .heart:hover, .card-item-product .heart.active  {
+ background-color: #6E93C4;
+ border-color: white;
+ color: white;
 }
 
 .card-item-product:hover .imgHover {
@@ -1260,7 +1267,8 @@ header {
   color: #3f6698;
 }
 
-.mySwiper1 ~ #sliderprev2, .mySwiper2 ~ #sliderprev2 {
+.mySwiper1 ~ #sliderprev2,
+.mySwiper2 ~ #sliderprev2 {
   right: auto;
   left: -25px;
 }
@@ -1270,10 +1278,6 @@ header {
   flex-direction: column;
   width: fit-content;
   gap: 10px;
-}
-
-.footer .z1 > p {
-  /* white-space: nowrap; */
 }
 
 .footer .x1 {
@@ -1308,7 +1312,7 @@ header {
 }
 
 .single-product-main {
-  max-width: 1400px;
+  max-width: 1600px;
   margin: 0 auto;
 }
 
@@ -1512,12 +1516,13 @@ header {
   border: 1px solid #3f6698;
   padding: 10px;
   width: fit-content;
+  width: 349px;
+  height: 426px;
 }
 .single-product-second .imgContainer > img {
   border-radius: 20px 197px 20px 20px;
   width: 100%;
-  min-width: 230px;
-  max-width: 349px;
+  height: 100%;
 }
 .single-product-second .text {
   width: 100%;
