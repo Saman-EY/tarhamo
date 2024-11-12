@@ -51,6 +51,8 @@ document.addEventListener("DOMContentLoaded", function () {
     swiper1.slideNext(); // Go to the next slide
   });
 
+  const tabs = document.querySelectorAll(".tab");
+
   // رویداد کلیک برای هر تب
   tabs.forEach((tab) => {
     tab.addEventListener("click", () => {
