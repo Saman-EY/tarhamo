@@ -433,11 +433,19 @@ button {
 .parent {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(9, 1fr);
-  gap: 28px;
+  gap: 18px;
   margin-bottom: 57px;
 }
-.parent > div {
+
+.parent > .ColContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1.7rem;
+  margin: 0 auto;
+  
+}
+
+.parent > .ColContainer > div {
   border-radius: 200px;
   border: 1px solid #3f6698;
   overflow: hidden;
@@ -448,9 +456,10 @@ button {
   background-size: cover;
   background-position: center;
   position: relative;
+
 }
 
-.parent > div::after {
+.parent > .ColContainer > div::after {
   content: "";
   position: absolute;
   inset: 0;
@@ -467,17 +476,33 @@ button {
   transition: all ease 0.3s;
 }
 
-.parent > div:hover::after {
+.parent > .ColContainer > div:hover::after {
   opacity: 100;
   visibility: visible;
 }
-.parent > div:hover .info-designers-pic a {
+.parent > .ColContainer > div:hover .info-designers-pic a {
   background: #fff;
   color: #3f6698;
 }
-.parent > div:hover .info-designers-pic a > svg {
+.parent > .ColContainer > div:hover .info-designers-pic a > svg {
   display: block;
 }
+.parent > .ColContainer > div {
+  position: relative;
+}
+/* Staggered Layout using nth-child for specific card heights */
+.profile-card:nth-child(n) {
+  grid-row: span 2; /* Every 4th item spans 2 rows */
+}
+
+.profile-card:nth-child(2n) {
+  grid-row: span 1; /* Every 5th item spans 1 row */
+}
+.parent > .ColContainer > div img {
+  width: 100%;
+  height: 100%;
+}
+
 
 .info-designers-pic {
   display: flex;
@@ -526,9 +551,6 @@ button {
 }
 
 .div8 {
-  grid-row: span 2 / span 2;
-  grid-column-start: 5;
-  grid-row-start: 1;
   background-image: linear-gradient(
       180.07deg,
       rgba(0, 0, 0, 0) 42.78%,
@@ -538,9 +560,6 @@ button {
 }
 
 .div9 {
-  grid-row: span 2 / span 2;
-  grid-column-start: 5;
-  grid-row-start: 3;
   background-image: linear-gradient(
       180.07deg,
       rgba(0, 0, 0, 0) 42.78%,
@@ -550,9 +569,6 @@ button {
 }
 
 .div10 {
-  grid-row: span 2 / span 2;
-  grid-column-start: 5;
-  grid-row-start: 5;
   background-image: linear-gradient(
       180.07deg,
       rgba(0, 0, 0, 0) 42.78%,
@@ -562,9 +578,6 @@ button {
 }
 
 .div11 {
-  grid-row: span 2 / span 2;
-  grid-column-start: 5;
-  grid-row-start: 7;
   background-image: linear-gradient(
       180.07deg,
       rgba(0, 0, 0, 0) 42.78%,
@@ -574,9 +587,6 @@ button {
 }
 
 .div12 {
-  grid-row: span 2 / span 2;
-  grid-column-start: 4;
-  grid-row-start: 2;
   background-image: linear-gradient(
       180.07deg,
       rgba(0, 0, 0, 0) 42.78%,
@@ -586,9 +596,6 @@ button {
 }
 
 .div13 {
-  grid-row: span 2 / span 2;
-  grid-column-start: 4;
-  grid-row-start: 4;
   background-image: linear-gradient(
       180.07deg,
       rgba(0, 0, 0, 0) 42.78%,
@@ -598,9 +605,6 @@ button {
 }
 
 .div14 {
-  grid-row: span 2 / span 2;
-  grid-column-start: 4;
-  grid-row-start: 6;
   background-image: linear-gradient(
       180.07deg,
       rgba(0, 0, 0, 0) 42.78%,
@@ -610,9 +614,6 @@ button {
 }
 
 .div15 {
-  grid-row: span 2 / span 2;
-  grid-column-start: 4;
-  grid-row-start: 8;
   background-image: linear-gradient(
       180.07deg,
       rgba(0, 0, 0, 0) 42.78%,
@@ -622,9 +623,6 @@ button {
 }
 
 .div16 {
-  grid-row: span 2 / span 2;
-  grid-column-start: 3;
-  grid-row-start: 1;
   background-image: linear-gradient(
       180.07deg,
       rgba(0, 0, 0, 0) 42.78%,
@@ -634,9 +632,6 @@ button {
 }
 
 .div17 {
-  grid-row: span 2 / span 2;
-  grid-column-start: 3;
-  grid-row-start: 3;
   background-image: linear-gradient(
       180.07deg,
       rgba(0, 0, 0, 0) 42.78%,
@@ -646,9 +641,6 @@ button {
 }
 
 .div18 {
-  grid-row: span 2 / span 2;
-  grid-column-start: 3;
-  grid-row-start: 5;
   background-image: linear-gradient(
       180.07deg,
       rgba(0, 0, 0, 0) 42.78%,
@@ -658,9 +650,6 @@ button {
 }
 
 .div19 {
-  grid-row: span 2 / span 2;
-  grid-column-start: 3;
-  grid-row-start: 7;
   background-image: linear-gradient(
       180.07deg,
       rgba(0, 0, 0, 0) 42.78%,
@@ -670,9 +659,6 @@ button {
 }
 
 .div20 {
-  grid-row: span 2 / span 2;
-  grid-column-start: 2;
-  grid-row-start: 2;
   background-image: linear-gradient(
       180.07deg,
       rgba(0, 0, 0, 0) 42.78%,
@@ -682,9 +668,6 @@ button {
 }
 
 .div21 {
-  grid-row: span 2 / span 2;
-  grid-column-start: 2;
-  grid-row-start: 4;
   background-image: linear-gradient(
       180.07deg,
       rgba(0, 0, 0, 0) 42.78%,
@@ -694,9 +677,6 @@ button {
 }
 
 .div22 {
-  grid-row: span 2 / span 2;
-  grid-column-start: 2;
-  grid-row-start: 6;
   background-image: linear-gradient(
       180.07deg,
       rgba(0, 0, 0, 0) 42.78%,
@@ -706,9 +686,6 @@ button {
 }
 
 .div23 {
-  grid-row: span 2 / span 2;
-  grid-column-start: 2;
-  grid-row-start: 8;
   background-image: linear-gradient(
       180.07deg,
       rgba(0, 0, 0, 0) 42.78%,
@@ -718,9 +695,6 @@ button {
 }
 
 .div24 {
-  grid-row: span 2 / span 2;
-  grid-column-start: 1;
-  grid-row-start: 1;
   background-image: linear-gradient(
       180.07deg,
       rgba(0, 0, 0, 0) 42.78%,
@@ -730,9 +704,6 @@ button {
 }
 
 .div25 {
-  grid-row: span 2 / span 2;
-  grid-column-start: 1;
-  grid-row-start: 3;
   background-image: linear-gradient(
       180.07deg,
       rgba(0, 0, 0, 0) 42.78%,
@@ -742,9 +713,6 @@ button {
 }
 
 .div26 {
-  grid-row: span 2 / span 2;
-  grid-column-start: 1;
-  grid-row-start: 5;
   background-image: linear-gradient(
       180.07deg,
       rgba(0, 0, 0, 0) 42.78%,
@@ -754,9 +722,6 @@ button {
 }
 
 .div27 {
-  grid-row: span 2 / span 2;
-  grid-column-start: 1;
-  grid-row-start: 7;
   background-image: linear-gradient(
       180.07deg,
       rgba(0, 0, 0, 0) 42.78%,
@@ -765,13 +730,6 @@ button {
     url("../img/pic4.png");
 }
 
-.parent > div {
-  position: relative;
-}
-.parent > div img {
-  width: 100%;
-  height: 100%;
-}
 
 .star-rating {
   display: flex;
