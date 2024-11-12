@@ -45,7 +45,10 @@
   }
   .intro-img-main {
     width: 100%;
+    max-width: 420px;
     height: 100%;
+    margin: 0 auto;
+    margin-bottom: 3rem;
   }
   .parent {
     grid-template-columns: repeat(2, 1fr); /* نمایش ۳ ستون در اندازه موبایل */

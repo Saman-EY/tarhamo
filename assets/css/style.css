@@ -111,6 +111,7 @@ button {
 
 .top-header {
   margin: 23px 0 27px 0;
+  padding: 0 2.5rem;
 }
 
 .list-menu-header {
@@ -130,7 +131,7 @@ button {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 46px;
+  gap: 26px;
 }
 
 .list-menu-header nav ul li a {
@@ -138,6 +139,7 @@ button {
   gap: 10px;
   font-size: 14px;
   color: #1b0d1c;
+  white-space: nowrap;
 }
 .list-menu-header nav ul li a.active {
   width: 120px;
@@ -1271,7 +1273,7 @@ header {
 }
 
 .footer .z1 > p {
-  white-space: nowrap;
+  /* white-space: nowrap; */
 }
 
 .footer .x1 {
