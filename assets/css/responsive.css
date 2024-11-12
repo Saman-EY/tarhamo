@@ -3,6 +3,23 @@
     display: none;
   }
 }
+@media (max-width: 1220px) {
+  .parent {
+    grid-template-columns: repeat(4, 1fr); /* نمایش ۳ ستون در اندازه موبایل */
+    column-gap: 13px;
+  }
+  .parent > div{
+    grid-column: auto;
+    grid-row: auto;
+    
+  }
+  /* .parent > div:nth-child(odd) {
+    margin-top: 10rem;
+  } */
+  .parent > .div10, .parent > .div8{
+    margin-top: 10rem;
+  }
+}
 
 @media (max-width: 1200px) {
   .disegn-pic-main {
@@ -52,12 +69,14 @@
   }
   .parent {
     grid-template-columns: repeat(2, 1fr); /* نمایش ۳ ستون در اندازه موبایل */
+    column-gap: 5px;
   }
 
   /* حذف تنظیمات موقعیت برای ساختار طبیعی‌تر */
   .parent > div {
     grid-column: auto;
     grid-row: auto;
+    margin: 0 auto;
   }
 }
 @media (max-width: 767px) {
@@ -85,10 +104,12 @@
     display: none !important;
   }
 
-  .mySwiper1 + #slidernext2 , .mySwiper2 + #slidernext2 {
+  .mySwiper1 + #slidernext2,
+  .mySwiper2 + #slidernext2 {
     display: none;
   }
-  .mySwiper1 ~ #sliderprev2, .mySwiper2 ~ #sliderprev2  {
+  .mySwiper1 ~ #sliderprev2,
+  .mySwiper2 ~ #sliderprev2 {
     display: none;
   }
 }
@@ -103,5 +124,10 @@
 
   .twoSliders .mySwiper3 {
     max-width: 280px;
+  }
+
+  .parent {
+    grid-template-columns: repeat(1, 1fr); /* نمایش ۳ ستون در اندازه موبایل */
+    column-gap: 5px;
   }
 }

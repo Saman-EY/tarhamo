@@ -443,6 +443,11 @@ button {
   overflow: hidden;
   width: 210px;
   height: 374px;
+  background-repeat: no-repeat;
+
+  background-size: cover;
+  background-position: center;
+  position: relative;
 }
 
 .parent > div::after {
@@ -530,11 +535,6 @@ button {
       #000000 81.41%
     ),
     url("../img/pic1.png");
-  background-repeat: no-repeat;
-
-  background-size: cover;
-  background-position: center;
-  position: relative;
 }
 
 .div9 {
@@ -547,11 +547,6 @@ button {
       #000000 81.41%
     ),
     url("../img/pic2.png");
-  background-repeat: no-repeat;
-
-  background-size: cover;
-  background-position: center;
-  position: relative;
 }
 
 .div10 {
@@ -564,11 +559,6 @@ button {
       #000000 81.41%
     ),
     url("../img/pic3.png");
-  background-repeat: no-repeat;
-
-  background-size: cover;
-  background-position: center;
-  position: relative;
 }
 
 .div11 {
@@ -581,11 +571,6 @@ button {
       #000000 81.41%
     ),
     url("../img/pic4.png");
-  background-repeat: no-repeat;
-
-  background-size: cover;
-  background-position: center;
-  position: relative;
 }
 
 .div12 {
@@ -598,11 +583,6 @@ button {
       #000000 81.41%
     ),
     url("../img/pic1.png");
-  background-repeat: no-repeat;
-
-  background-size: cover;
-  background-position: center;
-  position: relative;
 }
 
 .div13 {
@@ -615,11 +595,6 @@ button {
       #000000 81.41%
     ),
     url("../img/pic2.png");
-  background-repeat: no-repeat;
-
-  background-size: cover;
-  background-position: center;
-  position: relative;
 }
 
 .div14 {
@@ -632,11 +607,6 @@ button {
       #000000 81.41%
     ),
     url("../img/pic3.png");
-  background-repeat: no-repeat;
-
-  background-size: cover;
-  background-position: center;
-  position: relative;
 }
 
 .div15 {
@@ -649,11 +619,6 @@ button {
       #000000 81.41%
     ),
     url("../img/pic4.png");
-  background-repeat: no-repeat;
-
-  background-size: cover;
-  background-position: center;
-  position: relative;
 }
 
 .div16 {
@@ -666,11 +631,6 @@ button {
       #000000 81.41%
     ),
     url("../img/pic1.png");
-  background-repeat: no-repeat;
-
-  background-size: cover;
-  background-position: center;
-  position: relative;
 }
 
 .div17 {
@@ -683,11 +643,6 @@ button {
       #000000 81.41%
     ),
     url("../img/pic2.png");
-  background-repeat: no-repeat;
-
-  background-size: cover;
-  background-position: center;
-  position: relative;
 }
 
 .div18 {
@@ -700,11 +655,6 @@ button {
       #000000 81.41%
     ),
     url("../img/pic3.png");
-  background-repeat: no-repeat;
-
-  background-size: cover;
-  background-position: center;
-  position: relative;
 }
 
 .div19 {
@@ -717,11 +667,6 @@ button {
       #000000 81.41%
     ),
     url("../img/pic4.png");
-  background-repeat: no-repeat;
-
-  background-size: cover;
-  background-position: center;
-  position: relative;
 }
 
 .div20 {
@@ -734,11 +679,6 @@ button {
       #000000 81.41%
     ),
     url("../img/pic1.png");
-  background-repeat: no-repeat;
-
-  background-size: cover;
-  background-position: center;
-  position: relative;
 }
 
 .div21 {
@@ -751,11 +691,6 @@ button {
       #000000 81.41%
     ),
     url("../img/pic2.png");
-  background-repeat: no-repeat;
-
-  background-size: cover;
-  background-position: center;
-  position: relative;
 }
 
 .div22 {
@@ -768,11 +703,6 @@ button {
       #000000 81.41%
     ),
     url("../img/pic3.png");
-  background-repeat: no-repeat;
-
-  background-size: cover;
-  background-position: center;
-  position: relative;
 }
 
 .div23 {
@@ -785,11 +715,6 @@ button {
       #000000 81.41%
     ),
     url("../img/pic4.png");
-  background-repeat: no-repeat;
-
-  background-size: cover;
-  background-position: center;
-  position: relative;
 }
 
 .div24 {
@@ -802,11 +727,6 @@ button {
       #000000 81.41%
     ),
     url("../img/pic1.png");
-  background-repeat: no-repeat;
-
-  background-size: cover;
-  background-position: center;
-  position: relative;
 }
 
 .div25 {
@@ -819,11 +739,6 @@ button {
       #000000 81.41%
     ),
     url("../img/pic2.png");
-  background-repeat: no-repeat;
-
-  background-size: cover;
-  background-position: center;
-  position: relative;
 }
 
 .div26 {
@@ -836,11 +751,6 @@ button {
       #000000 81.41%
     ),
     url("../img/pic3.png");
-  background-repeat: no-repeat;
-
-  background-size: cover;
-  background-position: center;
-  position: relative;
 }
 
 .div27 {
@@ -853,11 +763,6 @@ button {
       #000000 81.41%
     ),
     url("../img/pic4.png");
-  background-repeat: no-repeat;
-
-  background-size: cover;
-  background-position: center;
-  position: relative;
 }
 
 .parent > div {
@@ -1002,10 +907,11 @@ button {
   justify-content: center;
   cursor: pointer;
 }
-.card-item-product .heart:hover, .card-item-product .heart.active  {
- background-color: #6E93C4;
- border-color: white;
- color: white;
+.card-item-product .heart:hover,
+.card-item-product .heart.active {
+  background-color: #6e93c4;
+  border-color: white;
+  color: white;
 }
 
 .card-item-product:hover .imgHover {
